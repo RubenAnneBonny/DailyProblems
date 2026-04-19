@@ -29,6 +29,305 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1776640878981-ppwip",
+      "link": "https://codeforces.com/problemset/problem/2110/D",
+      "name": "Fewer Batteries",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:21:18.981Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776640913314-w82uy",
+      "link": "https://codeforces.com/problemset/problem/2162/E",
+      "name": "Beautiful Palindromes",
+      "difficulty": 1600,
+      "addedAt": "2026-04-19T23:21:53.314Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776640966157-623jy",
+      "link": "https://codeforces.com/problemset/problem/1717/D",
+      "name": "Madoka and The Corruption Scheme",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:22:46.157Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641004033-pvnjk",
+      "link": "https://codeforces.com/problemset/problem/1332/D",
+      "name": "Walk on Matrix",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:23:24.033Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641015533-2az87",
+      "link": "https://codeforces.com/problemset/problem/2152/D",
+      "name": "Division Versus Addition",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:23:35.533Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641043671-sv4nx",
+      "link": "https://codeforces.com/problemset/problem/1594/D",
+      "name": "The Number of Imposters",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:24:03.671Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641068167-5suwo",
+      "link": "https://codeforces.com/problemset/problem/2149/E",
+      "name": "Hidden Knowledge of the Ancients",
+      "difficulty": 1500,
+      "addedAt": "2026-04-19T23:24:28.167Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641090313-p5kk2",
+      "link": "https://codeforces.com/problemset/problem/295/B",
+      "name": "Greg and Graph",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:24:50.313Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641115930-w633u",
+      "link": "https://codeforces.com/problemset/problem/2043/D",
+      "name": "Problem about GCD",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:25:15.930Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641141492-80b9v",
+      "link": "https://codeforces.com/problemset/problem/2132/D",
+      "name": "From 1 to Infinity",
+      "difficulty": 1600,
+      "addedAt": "2026-04-19T23:25:41.492Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641169740-9w81i",
+      "link": "https://codeforces.com/problemset/problem/1503/B",
+      "name": "3-Coloring",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:26:09.740Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641182555-1iga8",
+      "link": "https://codeforces.com/problemset/problem/2123/F",
+      "name": "Minimize Fixed Points",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:26:22.555Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641220232-ep4j2",
+      "link": "https://codeforces.com/problemset/problem/2148/G",
+      "name": "Farmer John's Last Wish",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:27:00.232Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641230159-8p0kl",
+      "link": "https://codeforces.com/problemset/problem/1552/D",
+      "name": "Array Differentiation",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:27:10.159Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641285970-sgruv",
+      "link": "https://codeforces.com/problemset/problem/1949/I",
+      "name": "Disks",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:28:05.970Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641312035-zx3pl",
+      "link": "https://codeforces.com/problemset/problem/2064/C",
+      "name": "Remove the Ends",
+      "difficulty": 1300,
+      "addedAt": "2026-04-19T23:28:32.035Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641330942-gdr7y",
+      "link": "https://codeforces.com/problemset/problem/2063/C",
+      "name": "Remove Exactly Two",
+      "difficulty": 1600,
+      "addedAt": "2026-04-19T23:28:50.942Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641344260-do9ug",
+      "link": "https://codeforces.com/problemset/problem/2118/D1",
+      "name": "Red Light, Green Light (Easy version)",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:29:04.260Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641353605-fzhu9",
+      "link": "https://codeforces.com/problemset/problem/1971/F",
+      "name": "Circle Perimeter",
+      "difficulty": 1600,
+      "addedAt": "2026-04-19T23:29:13.605Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641366738-uxgpf",
+      "link": "https://codeforces.com/problemset/problem/2154/D",
+      "name": "Catshock",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:29:26.738Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641379165-kh1z1",
+      "link": "https://codeforces.com/contest/1352/problem/G",
+      "name": "Special Permutation",
+      "difficulty": 1600,
+      "addedAt": "2026-04-19T23:29:39.165Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641421085-rmlf9",
+      "link": "https://codeforces.com/problemset/problem/2009/F",
+      "name": "Firefly's Queries",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:30:21.085Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641443442-jct4y",
+      "link": "https://codeforces.com/contest/2169/problem/D2",
+      "name": "Removal of a Sequence (Hard Version)",
+      "difficulty": 2100,
+      "addedAt": "2026-04-19T23:30:43.442Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
