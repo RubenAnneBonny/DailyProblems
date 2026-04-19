@@ -16,6 +16,19 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1776640662527-bvus7",
+      "link": "https://codeforces.com/contest/2155/problem/C",
+      "name": "The Ancient Wizards' Capes",
+      "difficulty": 1500,
+      "addedAt": "2026-04-19T23:17:42.527Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
     }
   ]
 }
