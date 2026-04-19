@@ -118,7 +118,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -157,7 +157,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -235,7 +235,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -248,7 +248,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -261,7 +261,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -273,7 +273,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
@@ -286,7 +286,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     },
@@ -299,7 +299,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
@@ -312,21 +312,255 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
-        "Ruiming": false
+        "Ruben": true,
+        "Ruiming": true
       }
     },
     {
-      "id": "1776641443442-jct4y",
-      "link": "https://codeforces.com/contest/2169/problem/D2",
-      "name": "Removal of a Sequence (Hard Version)",
-      "difficulty": 2100,
-      "addedAt": "2026-04-19T23:30:43.442Z",
+      "id": "1776641683021-ppivc",
+      "link": "https://codeforces.com/problemset/problem/2115/A",
+      "name": "Gellyfish and Flaming Peony",
+      "difficulty": 1500,
+      "addedAt": "2026-04-19T23:34:43.021Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641694046-re315",
+      "link": "https://codeforces.com/problemset/problem/518/D",
+      "name": "Ilya and Escalator",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:34:54.046Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641721164-drtfu",
+      "link": "https://codeforces.com/problemset/problem/1422/C",
+      "name": "Bargain",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:35:21.164Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641728003-igb51",
+      "link": "https://codeforces.com/problemset/problem/1875/C",
+      "name": "Jellyfish and Green Apple",
+      "difficulty": 1400,
+      "addedAt": "2026-04-19T23:35:28.003Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641738363-pucaj",
+      "link": "https://codeforces.com/problemset/problem/295/B",
+      "name": "Greg and Graph",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:35:38.364Z",
       "isDaily": false,
       "dailyDate": null,
       "solved": {
         "Ruben": false,
         "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641757171-xb9yi",
+      "link": "https://codeforces.com/problemset/problem/2104/E",
+      "name": "Unpleasant Strings",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:35:57.171Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641767265-vtqek",
+      "link": "https://codeforces.com/problemset/problem/2109/C1",
+      "name": "Hacking Numbers (Easy Version)",
+      "difficulty": 1500,
+      "addedAt": "2026-04-19T23:36:07.265Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641774587-4bcx6",
+      "link": "https://codeforces.com/problemset/problem/2109/C2",
+      "name": "Hacking Numbers (Medium Version)",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:36:14.587Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641796825-b8e1d",
+      "link": "https://codeforces.com/problemset/problem/2133/D",
+      "name": "Chicken Jockey",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:36:36.825Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641812863-77b0k",
+      "link": "https://codeforces.com/contest/1912/problem/A",
+      "name": "Accumulator Apex",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:36:52.863Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641822479-nuwh1",
+      "link": "https://codeforces.com/problemset/problem/101/B",
+      "name": "Buses",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:37:02.479Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641863780-03j4y",
+      "link": "https://codeforces.com/contest/1912/problem/K",
+      "name": "Kim's Quest",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:37:43.780Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641889381-0mewy",
+      "link": "https://codeforces.com/problemset/problem/132/C",
+      "name": "Logo Turtle",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:38:09.381Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641955048-lkrk3",
+      "link": "https://codeforces.com/gym/104821/problem/C",
+      "name": "Primitive Root",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:39:15.048Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642006945-5725o",
+      "link": "https://codeforces.com/gym/104945/problem/B",
+      "name": "Supporting everyone",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:40:06.945Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642036823-ifpe3",
+      "link": "https://codeforces.com/gym/103148/problem/A",
+      "name": "Zeros",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:40:36.823Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642091682-25a08",
+      "link": "https://codeforces.com/gym/104976/problem/H",
+      "name": "Sugar Sweet II",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:41:31.682Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642103982-wy4d5",
+      "link": "https://codeforces.com/problemset/problem/1493/D",
+      "name": "GCD of an Array",
+      "difficulty": 2100,
+      "addedAt": "2026-04-19T23:41:43.982Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642125254-qpdat",
+      "link": "https://codeforces.com/problemset/problem/2126/E",
+      "name": "G-C-D, Unlucky!",
+      "difficulty": 1400,
+      "addedAt": "2026-04-19T23:42:05.254Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
       }
     }
   ]
