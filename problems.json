@@ -29,6 +29,162 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1776640878981-ppwip",
+      "link": "https://codeforces.com/problemset/problem/2110/D",
+      "name": "Fewer Batteries",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:21:18.981Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776640913314-w82uy",
+      "link": "https://codeforces.com/problemset/problem/2162/E",
+      "name": "Beautiful Palindromes",
+      "difficulty": 1600,
+      "addedAt": "2026-04-19T23:21:53.314Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776640966157-623jy",
+      "link": "https://codeforces.com/problemset/problem/1717/D",
+      "name": "Madoka and The Corruption Scheme",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:22:46.157Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641004033-pvnjk",
+      "link": "https://codeforces.com/problemset/problem/1332/D",
+      "name": "Walk on Matrix",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:23:24.033Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641015533-2az87",
+      "link": "https://codeforces.com/problemset/problem/2152/D",
+      "name": "Division Versus Addition",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:23:35.533Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641043671-sv4nx",
+      "link": "https://codeforces.com/problemset/problem/1594/D",
+      "name": "The Number of Imposters",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:24:03.671Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641068167-5suwo",
+      "link": "https://codeforces.com/problemset/problem/2149/E",
+      "name": "Hidden Knowledge of the Ancients",
+      "difficulty": 1500,
+      "addedAt": "2026-04-19T23:24:28.167Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641090313-p5kk2",
+      "link": "https://codeforces.com/problemset/problem/295/B",
+      "name": "Greg and Graph",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:24:50.313Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641115930-w633u",
+      "link": "https://codeforces.com/problemset/problem/2043/D",
+      "name": "Problem about GCD",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:25:15.930Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776641141492-80b9v",
+      "link": "https://codeforces.com/problemset/problem/2132/D",
+      "name": "From 1 to Infinity",
+      "difficulty": 1600,
+      "addedAt": "2026-04-19T23:25:41.492Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641169740-9w81i",
+      "link": "https://codeforces.com/problemset/problem/1503/B",
+      "name": "3-Coloring",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:26:09.740Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641182555-1iga8",
+      "link": "https://codeforces.com/problemset/problem/2123/F",
+      "name": "Minimize Fixed Points",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:26:22.555Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
