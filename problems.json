@@ -260,7 +260,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     },
@@ -309,6 +309,19 @@
       "name": "Firefly's Queries",
       "difficulty": 1700,
       "addedAt": "2026-04-19T23:30:21.085Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776641443442-jct4y",
+      "link": "https://codeforces.com/contest/2169/problem/D2",
+      "name": "Removal of a Sequence (Hard Version)",
+      "difficulty": 2100,
+      "addedAt": "2026-04-19T23:30:43.442Z",
       "isDaily": false,
       "dailyDate": null,
       "solved": {
