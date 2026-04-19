@@ -1,4 +1,21 @@
 {
-  "people": ["Ruben", "Ruiming"],
-  "problems": []
+  "people": [
+    "Ruben",
+    "Ruiming"
+  ],
+  "problems": [
+    {
+      "id": "1776639928070-x5uel",
+      "link": "https://codeforces.com/problemset/problem/180/E",
+      "name": "Cubes",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:05:28.070Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    }
+  ]
 }
