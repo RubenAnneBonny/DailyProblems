@@ -10,49 +10,82 @@
       --blue-light: #dbeafe;
       --green: #16a34a;
       --green-light: #dcfce7;
+      --green-mid: #22c55e;
       --red: #dc2626;
+      --yellow-bg: #fef9c3;
+      --yellow-border: #fde68a;
+      --yellow-text: #92400e;
+      --gray-50: #f9fafb;
       --gray-100: #f3f4f6;
       --gray-200: #e5e7eb;
       --gray-400: #9ca3af;
+      --gray-500: #6b7280;
       --gray-600: #4b5563;
       --gray-800: #1f2937;
-      --radius: 8px;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: system-ui, -apple-system, sans-serif;
-      background: #f9fafb;
+      background: var(--gray-50);
       color: var(--gray-800);
       min-height: 100vh;
     }
 
+    /* ── Banner ── */
     #daily-banner {
-      padding: 12px 20px;
+      padding: 11px 20px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       text-align: center;
-      border-bottom: 1px solid var(--gray-200);
     }
-
-    #daily-banner.ruben { background: var(--blue-light); color: #1e40af; }
+    #daily-banner.ruben   { background: var(--blue-light); color: #1e40af; }
     #daily-banner.ruiming { background: var(--green-light); color: #15803d; }
 
+    /* ── Layout ── */
     #main-container {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
       padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
     }
 
+    /* ── Daily section ── */
+    #daily-section {
+      background: white;
+      border: 2px solid var(--blue);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      box-shadow: var(--shadow-md);
+    }
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue);
+      margin-bottom: 10px;
+    }
+    #daily-empty {
+      color: var(--gray-400);
+      font-size: 0.88rem;
+    }
+
+    /* ── Toolbar ── */
     #toolbar {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 7px;
       align-items: center;
-      margin-bottom: 16px;
     }
 
+    /* ── Buttons ── */
     button {
       padding: 8px 14px;
       border: none;
@@ -60,188 +93,267 @@
       cursor: pointer;
       font-size: 0.875rem;
       font-weight: 500;
-      transition: opacity 0.15s;
+      transition: opacity 0.15s, transform 0.1s;
     }
-    button:hover { opacity: 0.85; }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    button:hover   { opacity: 0.85; }
+    button:active  { transform: scale(0.97); }
+    button:disabled { opacity: 0.45; cursor: not-allowed; }
 
-    #btn-add { background: var(--blue); color: white; }
-    #btn-sync { background: var(--gray-200); color: var(--gray-800); }
-    #btn-save { background: var(--green); color: white; }
-    #btn-settings { background: var(--gray-100); color: var(--gray-600); border: 1px solid var(--gray-200); }
+    #btn-add      { background: var(--blue); color: white; }
+    #btn-sync     { background: var(--gray-200); color: var(--gray-800); }
+    #btn-save     { background: var(--green); color: white; }
+    #btn-settings { background: white; color: var(--gray-600); border: 1px solid var(--gray-200); }
 
-    .filter-label {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.875rem;
-      cursor: pointer;
-      padding: 8px 4px;
-      color: var(--gray-600);
-    }
-    .filter-label input { cursor: pointer; width: 15px; height: 15px; }
+    #sync-status { font-size: 0.78rem; color: var(--gray-400); margin-left: auto; }
+    #sync-status.err { color: var(--red); font-weight: 500; }
 
-    #sync-status {
-      font-size: 0.8rem;
-      color: var(--gray-400);
-      margin-left: auto;
-    }
-    #sync-status.error { color: var(--red); font-weight: 500; }
-
-    /* Add form */
+    /* ── Add form ── */
     #add-form {
       background: white;
       border: 1px solid var(--gray-200);
       border-radius: var(--radius);
       padding: 16px;
-      margin-bottom: 16px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: flex-end;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: var(--shadow);
     }
     #add-form.hidden { display: none; }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      flex: 1;
-      min-width: 180px;
-    }
-    .form-group label { font-size: 0.8rem; color: var(--gray-600); font-weight: 500; }
+    .form-row { display: flex; flex-wrap: wrap; gap: 10px; }
 
-    input[type="url"], input[type="text"], input[type="password"], select {
+    .fg { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 160px; }
+    .fg.narrow { flex: 0 0 130px; min-width: 0; }
+    .fg label { font-size: 0.78rem; color: var(--gray-600); font-weight: 600; }
+
+    input[type="url"],
+    input[type="text"],
+    input[type="number"],
+    input[type="password"],
+    select {
       padding: 8px 10px;
       border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
+      border-radius: 8px;
       font-size: 0.875rem;
       width: 100%;
       background: white;
       color: var(--gray-800);
     }
     input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px; border-color: transparent; }
+    input[readonly] { background: var(--gray-100); color: var(--gray-500); cursor: default; }
 
-    .form-buttons { display: flex; gap: 8px; align-items: flex-end; }
+    #fetch-status { font-size: 0.76rem; min-height: 14px; }
+    #fetch-status.loading { color: var(--blue); }
+    #fetch-status.ok      { color: var(--green); }
+    #fetch-status.fail    { color: var(--red); }
+
+    #cf-fields    { display: none; }
+    #cf-fields.on { display: flex; }
+
+    #manual-fields    { display: none; }
+    #manual-fields.on { display: flex; flex-direction: column; gap: 10px; }
+
+    .cf-note {
+      font-size: 0.78rem;
+      background: var(--yellow-bg);
+      border: 1px solid var(--yellow-border);
+      color: var(--yellow-text);
+      border-radius: 7px;
+      padding: 6px 10px;
+    }
+
+    .daily-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      cursor: pointer;
+    }
+    .daily-check input { width: 16px; height: 16px; accent-color: var(--blue); cursor: pointer; }
+
+    .form-btns { display: flex; gap: 8px; }
     #form-submit { background: var(--blue); color: white; }
     #form-cancel { background: var(--gray-100); color: var(--gray-600); }
 
-    /* Problem cards */
-    #problem-list { display: flex; flex-direction: column; gap: 10px; }
-
-    .problem-card {
-      background: white;
-      border: 1px solid var(--gray-200);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-    }
-    .problem-card.fully-solved { border-left: 3px solid var(--green); }
-
-    .card-header {
+    /* ── List controls ── */
+    #list-controls {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 10px;
-      margin-bottom: 10px;
-    }
-
-    .card-link {
-      color: var(--blue);
-      text-decoration: none;
-      font-size: 0.9rem;
-      word-break: break-all;
-      flex: 1;
-    }
-    .card-link:hover { text-decoration: underline; }
-
-    .difficulty-badge {
-      background: var(--gray-100);
-      color: var(--gray-600);
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 3px 8px;
-      border-radius: 20px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .solved-row {
-      display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 8px;
     }
+    .list-title { font-size: 0.88rem; font-weight: 700; color: var(--gray-800); flex: 1; }
 
-    .solved-label {
+    .filter-label {
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       cursor: pointer;
       color: var(--gray-600);
     }
-    .solved-label input[type="checkbox"] {
-      width: 16px;
-      height: 16px;
-      cursor: pointer;
-      accent-color: var(--green);
-    }
-    .solved-label.checked { color: var(--green); font-weight: 500; }
+    .filter-label input { width: 15px; height: 15px; cursor: pointer; }
 
-    .card-meta {
-      font-size: 0.75rem;
-      color: var(--gray-400);
+    .sort-wrap { display: flex; align-items: center; gap: 5px; font-size: 0.8rem; color: var(--gray-500); }
+    .sort-wrap select {
+      padding: 5px 8px;
+      border: 1px solid var(--gray-200);
+      border-radius: 7px;
+      font-size: 0.8rem;
+      background: white;
+      cursor: pointer;
     }
+
+    /* ── Problem cards ── */
+    #problem-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 13px 15px;
+      box-shadow: var(--shadow);
+      transition: border-color 0.25s;
+    }
+    .card.solved-all { border-left: 3px solid var(--green-mid); }
+    .card.is-daily   { border-top: 2px solid var(--blue); }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 3px;
+    }
+    .card-name { font-weight: 600; font-size: 0.93rem; flex: 1; }
+
+    .card-badges { display: flex; gap: 5px; align-items: center; flex-shrink: 0; }
+
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 20px;
+    }
+    .badge-daily { background: var(--blue-light); color: var(--blue); }
+    .badge-diff  { background: var(--gray-100); color: var(--gray-600); }
+
+    /* Colour-coded difficulty */
+    .d-green  { background: #dcfce7; color: #15803d; }
+    .d-yellow { background: #fef9c3; color: #92400e; }
+    .d-orange { background: #ffedd5; color: #9a3412; }
+    .d-red    { background: #fee2e2; color: #991b1b; }
+    .d-purple { background: #f3e8ff; color: #6b21a8; }
+
+    .card-link {
+      display: block;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 0.78rem;
+      word-break: break-all;
+      margin-bottom: 10px;
+    }
+    .card-link:hover { text-decoration: underline; }
+
+    /* ── Solve buttons ── */
+    .solved-row { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 9px; }
+
+    .solve-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 13px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 2px solid var(--gray-200);
+      background: white;
+      color: var(--gray-500);
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+      position: relative;
+      user-select: none;
+    }
+    .solve-btn:hover { border-color: var(--green-mid); color: var(--green); }
+    .solve-btn.on {
+      border-color: var(--green-mid);
+      background: var(--green-light);
+      color: var(--green);
+    }
+    .solve-btn .chk {
+      width: 13px; height: 13px;
+      opacity: 0; transform: scale(0);
+      transition: opacity 0.18s, transform 0.18s;
+      flex-shrink: 0;
+    }
+    .solve-btn.on .chk { opacity: 1; transform: scale(1); }
+
+    @keyframes pop {
+      0%   { transform: scale(1); }
+      35%  { transform: scale(1.25); }
+      65%  { transform: scale(0.93); }
+      100% { transform: scale(1); }
+    }
+    .solve-btn.popping { animation: pop 0.32s cubic-bezier(.36,.07,.19,.97); }
+
+    /* particle */
+    .pt {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .card-meta { font-size: 0.73rem; color: var(--gray-400); }
 
     .empty-state {
       text-align: center;
       padding: 48px 0;
       color: var(--gray-400);
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
-    /* Setup / Settings overlay */
-    #setup-overlay {
+    /* ── Settings modal ── */
+    #overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.4);
+      background: rgba(0,0,0,0.42);
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 100;
+      z-index: 200;
       padding: 16px;
     }
-    #setup-overlay.hidden { display: none; }
+    #overlay.hidden { display: none; }
 
-    #setup-modal {
+    #modal {
       background: white;
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 24px;
       width: 100%;
       max-width: 420px;
       display: flex;
       flex-direction: column;
       gap: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
-    #setup-modal h2 { font-size: 1.1rem; color: var(--gray-800); }
+    #modal h2 { font-size: 1.05rem; }
 
-    .setup-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .setup-group label { font-size: 0.85rem; font-weight: 500; color: var(--gray-600); }
-    .setup-note { font-size: 0.75rem; color: var(--gray-400); }
+    .mg { display: flex; flex-direction: column; gap: 6px; }
+    .mg label { font-size: 0.82rem; font-weight: 600; color: var(--gray-600); }
+    .mg .note { font-size: 0.73rem; color: var(--gray-400); line-height: 1.5; }
 
-    .setup-buttons { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
-    #setup-save { background: var(--blue); color: white; }
-    #setup-close { background: var(--gray-100); color: var(--gray-600); }
+    .modal-btns { display: flex; gap: 8px; justify-content: flex-end; }
+    #modal-save  { background: var(--blue); color: white; }
+    #modal-close { background: var(--gray-100); color: var(--gray-600); }
 
-    /* Responsive */
-    @media (max-width: 480px) {
-      #toolbar { gap: 6px; }
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
       button { padding: 7px 11px; font-size: 0.82rem; }
-      #sync-status { width: 100%; margin-left: 0; }
-      .card-header { flex-direction: column; gap: 6px; }
+      #sync-status { margin-left: 0; width: 100%; }
+      .card-top { flex-wrap: wrap; }
+      .sort-wrap { width: 100%; }
     }
   </style>
 </head>
@@ -250,62 +362,116 @@
 <div id="daily-banner"></div>
 
 <div id="main-container">
+
+  <!-- Daily problem -->
+  <div id="daily-section">
+    <div class="section-label">Today's Daily Problem</div>
+    <div id="daily-body">
+      <span id="daily-empty" style="color:var(--gray-400);font-size:.88rem">No daily problem added yet today.</span>
+    </div>
+  </div>
+
+  <!-- Toolbar -->
   <div id="toolbar">
     <button id="btn-add">+ Add Problem</button>
-    <label class="filter-label">
-      <input type="checkbox" id="filter-unsolved"> Unsolved only
-    </label>
     <button id="btn-sync">↓ Pull</button>
     <button id="btn-save">↑ Save to GitHub</button>
     <button id="btn-settings">⚙ Settings</button>
     <span id="sync-status"></span>
   </div>
 
+  <!-- Add form -->
   <div id="add-form" class="hidden">
-    <div class="form-group">
-      <label for="form-link">Problem URL</label>
-      <input id="form-link" type="url" placeholder="https://codeforces.com/...">
+    <div class="form-row">
+      <div class="fg">
+        <label for="form-link">Problem URL</label>
+        <input id="form-link" type="url" placeholder="Paste URL — Codeforces auto-detected">
+        <span id="fetch-status"></span>
+      </div>
     </div>
-    <div class="form-group" style="max-width: 150px;">
-      <label for="form-difficulty">Difficulty</label>
-      <input id="form-difficulty" type="text" placeholder="e.g. 1800">
+
+    <div id="cf-fields" class="form-row">
+      <div class="fg">
+        <label for="cf-name">Problem Name</label>
+        <input id="cf-name" type="text" readonly>
+      </div>
+      <div class="fg narrow">
+        <label for="cf-diff">Difficulty</label>
+        <input id="cf-diff" type="number" readonly>
+      </div>
     </div>
-    <div class="form-buttons">
+
+    <div id="manual-fields">
+      <div class="cf-note">Not a Codeforces URL — enter details manually.</div>
+      <div class="form-row">
+        <div class="fg">
+          <label for="m-name">Problem Name</label>
+          <input id="m-name" type="text" placeholder="Problem name">
+        </div>
+        <div class="fg narrow">
+          <label for="m-diff">Difficulty</label>
+          <input id="m-diff" type="number" placeholder="e.g. 1800">
+        </div>
+      </div>
+    </div>
+
+    <label class="daily-check">
+      <input type="checkbox" id="form-daily">
+      Mark as today's daily problem
+    </label>
+
+    <div class="form-btns">
       <button id="form-submit">Add</button>
       <button id="form-cancel">Cancel</button>
+    </div>
+  </div>
+
+  <!-- List controls -->
+  <div id="list-controls">
+    <span class="list-title">All Problems</span>
+    <label class="filter-label">
+      <input type="checkbox" id="filter-unsolved"> Unsolved only
+    </label>
+    <div class="sort-wrap">
+      Sort:
+      <select id="sort-by">
+        <option value="date-desc">Newest first</option>
+        <option value="date-asc">Oldest first</option>
+        <option value="diff-asc">Easiest first</option>
+        <option value="diff-desc">Hardest first</option>
+      </select>
     </div>
   </div>
 
   <div id="problem-list"></div>
 </div>
 
-<!-- Setup / Settings overlay -->
-<div id="setup-overlay" class="hidden">
-  <div id="setup-modal">
-    <h2>Setup</h2>
-    <div class="setup-group">
-      <label for="setup-user">Who are you?</label>
-      <select id="setup-user"></select>
+<!-- Settings modal -->
+<div id="overlay" class="hidden">
+  <div id="modal">
+    <h2>Settings</h2>
+    <div class="mg">
+      <label for="s-user">Who are you?</label>
+      <select id="s-user"></select>
     </div>
-    <div class="setup-group">
-      <label for="setup-pat">GitHub Personal Access Token</label>
-      <input id="setup-pat" type="password" placeholder="ghp_...">
-      <span class="setup-note">
-        Needed to save changes. Create one at GitHub → Settings → Developer settings → Personal access tokens.
-        Required scope: <strong>public_repo</strong> (or <strong>repo</strong> for private).
-        Stored in your browser only.
+    <div class="mg">
+      <label for="s-pat">GitHub Personal Access Token</label>
+      <input id="s-pat" type="password" placeholder="ghp_...">
+      <span class="note">
+        Needed to save changes. Create at GitHub → Settings → Developer settings → Personal access tokens (classic).<br>
+        Scope: <strong>public_repo</strong>. Stored in your browser only.
       </span>
     </div>
-    <div class="setup-buttons">
-      <button id="setup-close">Cancel</button>
-      <button id="setup-save">Save</button>
+    <div class="modal-btns">
+      <button id="modal-close">Cancel</button>
+      <button id="modal-save">Save</button>
     </div>
   </div>
 </div>
 
 <script>
-  const REPO = 'RubenAnneBonny/DailyProblems';
-  const FILE = 'problems.json';
+  const REPO    = 'RubenAnneBonny/DailyProblems';
+  const FILE    = 'problems.json';
   const API_URL = `https://api.github.com/repos/${REPO}/contents/${FILE}`;
 
   const state = {
@@ -314,79 +480,75 @@
     pat: null,
     currentUser: null,
     dirty: false,
+    abortCtrl: null,
   };
 
-  // ── Persistence ────────────────────────────────────────────────────────────
+  // ── Storage ────────────────────────────────────────────────────────────────
 
-  function loadFromStorage() {
-    state.pat = localStorage.getItem('dp_pat') || null;
+  function loadStorage() {
+    state.pat         = localStorage.getItem('dp_pat')  || null;
     state.currentUser = localStorage.getItem('dp_user') || null;
-    state.sha = localStorage.getItem('dp_sha') || null;
+    state.sha         = localStorage.getItem('dp_sha')  || null;
+  }
+  const savePat  = p => { state.pat         = p; localStorage.setItem('dp_pat',  p); };
+  const saveUser = u => { state.currentUser = u; localStorage.setItem('dp_user', u); };
+
+  // ── Codeforces ─────────────────────────────────────────────────────────────
+
+  function parseCF(url) {
+    const ps = [
+      /codeforces\.com\/problemset\/problem\/(\d+)\/([A-Za-z0-9]+)/,
+      /codeforces\.com\/contest\/(\d+)\/problem\/([A-Za-z0-9]+)/,
+      /codeforces\.com\/gym\/(\d+)\/problem\/([A-Za-z0-9]+)/,
+    ];
+    for (const p of ps) {
+      const m = url.match(p);
+      if (m) return { contestId: m[1], index: m[2].toUpperCase() };
+    }
+    return null;
   }
 
-  function savePat(pat) {
-    state.pat = pat;
-    localStorage.setItem('dp_pat', pat);
-  }
-
-  function saveUser(user) {
-    state.currentUser = user;
-    localStorage.setItem('dp_user', user);
+  async function fetchCF(contestId, index, signal) {
+    const res  = await fetch(`https://codeforces.com/api/contest.standings?contestId=${contestId}&from=1&count=1`, { signal });
+    if (!res.ok) throw new Error('API error');
+    const data = await res.json();
+    if (data.status !== 'OK') throw new Error(data.comment || 'API error');
+    const prob = data.result.problems.find(p => p.index === index);
+    if (!prob) throw new Error('Problem not found');
+    return { name: prob.name, difficulty: prob.rating ?? null };
   }
 
   // ── GitHub API ─────────────────────────────────────────────────────────────
 
-  async function pullFromGitHub() {
+  async function pull() {
     setStatus('Fetching…');
     try {
-      const headers = { 'Accept': 'application/vnd.github+json' };
-      if (state.pat) headers['Authorization'] = `token ${state.pat}`;
-
-      const res = await fetch(API_URL, { headers });
-
+      const hdrs = { 'Accept': 'application/vnd.github+json' };
+      if (state.pat) hdrs['Authorization'] = `token ${state.pat}`;
+      const res = await fetch(API_URL, { headers: hdrs });
       if (res.status === 404) {
-        // File doesn't exist yet — use defaults
         state.data = { people: ['Ruben', 'Ruiming'], problems: [] };
-        state.sha = null;
-        setStatus('Ready (new file)');
+        state.sha  = null;
+        setStatus('Ready');
         return;
       }
-
-      if (!res.ok) throw new Error(`GitHub GET ${res.status}`);
-
-      const json = await res.json();
-      state.sha = json.sha;
+      if (!res.ok) throw new Error(`GitHub ${res.status}`);
+      const json   = await res.json();
+      state.sha    = json.sha;
       localStorage.setItem('dp_sha', state.sha);
-
-      const content = json.content.replace(/\n/g, '');
-      state.data = JSON.parse(atob(content));
-
+      state.data   = JSON.parse(atob(json.content.replace(/\n/g, '')));
       setStatus('Pulled');
-    } catch (err) {
-      setStatus('Pull failed: ' + err.message, true);
-    }
+    } catch (e) { setStatus('Pull failed: ' + e.message, true); }
   }
 
-  async function saveToGitHub() {
-    if (!state.pat) {
-      showSetupOverlay();
-      return;
-    }
-
+  async function save() {
+    if (!state.pat) { openModal(); return; }
     setStatus('Saving…');
     document.getElementById('btn-save').disabled = true;
-
     try {
-      const json = JSON.stringify(state.data, null, 2);
-      // Encode UTF-8 safely before btoa
-      const content = btoa(unescape(encodeURIComponent(json)));
-
-      const body = {
-        message: `Update problems [${new Date().toISOString().slice(0, 10)}]`,
-        content,
-      };
+      const content = btoa(unescape(encodeURIComponent(JSON.stringify(state.data, null, 2))));
+      const body    = { message: `Update problems [${today()}]`, content };
       if (state.sha) body.sha = state.sha;
-
       const res = await fetch(API_URL, {
         method: 'PUT',
         headers: {
@@ -396,273 +558,376 @@
         },
         body: JSON.stringify(body),
       });
-
-      if (res.status === 409) {
-        setStatus('Conflict — pull first, then re-save', true);
-        return;
-      }
-      if (res.status === 401 || res.status === 403) {
-        setStatus('Auth failed — check your PAT in Settings', true);
-        return;
-      }
-      if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
-        throw new Error(err.message || `HTTP ${res.status}`);
-      }
-
+      if (res.status === 409) { setStatus('Conflict — pull first, then re-save', true); return; }
+      if (res.status === 401 || res.status === 403) { setStatus('Auth failed — check PAT in Settings', true); return; }
+      if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.message || `HTTP ${res.status}`); }
       const result = await res.json();
       state.sha = result.content.sha;
       localStorage.setItem('dp_sha', state.sha);
       state.dirty = false;
-
       setStatus('Saved!');
-    } catch (err) {
-      setStatus('Save failed: ' + err.message, true);
-    } finally {
-      document.getElementById('btn-save').disabled = false;
-    }
+    } catch (e) { setStatus('Save failed: ' + e.message, true); }
+    finally { document.getElementById('btn-save').disabled = false; }
+  }
+
+  // ── Helpers ────────────────────────────────────────────────────────────────
+
+  const today   = () => new Date().toISOString().slice(0, 10);
+  const allSolved = p => state.data.people.every(n => p.solved?.[n] === true);
+
+  function diffClass(d) {
+    if (!d)       return '';
+    if (d < 1200) return 'd-green';
+    if (d < 1600) return 'd-yellow';
+    if (d < 2000) return 'd-orange';
+    if (d < 2400) return 'd-red';
+    return 'd-purple';
+  }
+
+  function setStatus(msg, isErr = false) {
+    const el = document.getElementById('sync-status');
+    el.textContent = msg;
+    el.className = isErr ? 'err' : '';
+    if (!isErr && msg) setTimeout(() => { if (el.textContent === msg) el.textContent = ''; }, 4000);
   }
 
   // ── Render ─────────────────────────────────────────────────────────────────
 
   function renderAll() {
     renderBanner();
-    renderProblemList();
+    renderDaily();
+    renderList();
   }
 
   function renderBanner() {
-    const banner = document.getElementById('daily-banner');
+    const el  = document.getElementById('daily-banner');
     const day = new Date().getDate();
-    const isOdd = day % 2 === 1;
-    const person = state.data?.people[isOdd ? 0 : 1] ?? (isOdd ? 'Ruben' : 'Ruiming');
-    banner.textContent = `Day ${day} — ${person}'s turn to add a problem`;
-    banner.className = isOdd ? 'ruben' : 'ruiming';
+    const odd = day % 2 === 1;
+    const who = state.data?.people[odd ? 0 : 1] ?? (odd ? 'Ruben' : 'Ruiming');
+    el.textContent = `Day ${day} — ${who}'s turn to add today's daily problem`;
+    el.className   = odd ? 'ruben' : 'ruiming';
   }
 
-  function isFullySolved(problem) {
-    return state.data.people.every(p => problem.solved?.[p] === true);
-  }
+  function renderDaily() {
+    const body  = document.getElementById('daily-body');
+    const t     = today();
+    const daily = state.data?.problems
+      .filter(p => p.isDaily && p.dailyDate === t)
+      .sort((a, b) => new Date(b.addedAt) - new Date(a.addedAt))[0];
 
-  function renderProblemList() {
-    const container = document.getElementById('problem-list');
-    container.innerHTML = '';
-
-    if (!state.data) return;
-
-    const filterUnsolved = document.getElementById('filter-unsolved').checked;
-
-    const sorted = [...state.data.problems].sort(
-      (a, b) => new Date(a.addedAt) - new Date(b.addedAt)
-    );
-
-    const visible = filterUnsolved ? sorted.filter(p => !isFullySolved(p)) : sorted;
-
-    if (visible.length === 0) {
-      container.innerHTML = `<div class="empty-state">${
-        filterUnsolved ? 'No unsolved problems!' : 'No problems yet. Add the first one!'
-      }</div>`;
+    body.innerHTML = '';
+    if (!daily) {
+      body.innerHTML = '<span style="color:var(--gray-400);font-size:.88rem">No daily problem added yet today.</span>';
       return;
     }
+    body.appendChild(buildCard(daily));
+  }
 
-    visible.forEach(problem => container.appendChild(buildCard(problem)));
+  function renderList() {
+    const container   = document.getElementById('problem-list');
+    container.innerHTML = '';
+    if (!state.data) return;
+
+    const unsolved = document.getElementById('filter-unsolved').checked;
+    const sortBy   = document.getElementById('sort-by').value;
+
+    let list = [...state.data.problems];
+    if (unsolved) list = list.filter(p => !allSolved(p));
+
+    list.sort((a, b) => {
+      if (sortBy === 'date-asc')  return new Date(a.addedAt) - new Date(b.addedAt);
+      if (sortBy === 'date-desc') return new Date(b.addedAt) - new Date(a.addedAt);
+      if (sortBy === 'diff-asc')  return (a.difficulty ?? Infinity) - (b.difficulty ?? Infinity);
+      if (sortBy === 'diff-desc') return (b.difficulty ?? -Infinity) - (a.difficulty ?? -Infinity);
+      return 0;
+    });
+
+    if (!list.length) {
+      container.innerHTML = `<div class="empty-state">${unsolved ? 'No unsolved problems!' : 'No problems yet. Add the first one!'}</div>`;
+      return;
+    }
+    list.forEach(p => container.appendChild(buildCard(p)));
   }
 
   function buildCard(problem) {
-    const card = document.createElement('div');
-    card.className = 'problem-card' + (isFullySolved(problem) ? ' fully-solved' : '');
-    card.dataset.id = problem.id;
+    const el = document.createElement('div');
+    el.className = ['card', allSolved(problem) ? 'solved-all' : '', problem.isDaily ? 'is-daily' : ''].filter(Boolean).join(' ');
+    el.dataset.id = problem.id;
 
-    // Header: link + difficulty
-    const header = document.createElement('div');
-    header.className = 'card-header';
+    // Top row
+    const top = document.createElement('div');
+    top.className = 'card-top';
 
+    const name = document.createElement('span');
+    name.className = 'card-name';
+    name.textContent = problem.name || 'Untitled';
+
+    const badges = document.createElement('div');
+    badges.className = 'card-badges';
+
+    if (problem.isDaily) {
+      const b = document.createElement('span');
+      b.className = 'badge badge-daily';
+      b.textContent = 'Daily';
+      badges.appendChild(b);
+    }
+    if (problem.difficulty) {
+      const b = document.createElement('span');
+      b.className = `badge badge-diff ${diffClass(problem.difficulty)}`;
+      b.textContent = problem.difficulty;
+      badges.appendChild(b);
+    }
+
+    top.appendChild(name);
+    top.appendChild(badges);
+
+    // Link
     const link = document.createElement('a');
-    link.href = problem.link;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
     link.className = 'card-link';
+    link.href   = problem.link;
+    link.target = '_blank';
+    link.rel    = 'noopener noreferrer';
     try {
       const u = new URL(problem.link);
       link.textContent = u.hostname + u.pathname.replace(/\/$/, '');
-    } catch {
-      link.textContent = problem.link;
-    }
+    } catch { link.textContent = problem.link; }
 
-    const diff = document.createElement('span');
-    diff.className = 'difficulty-badge';
-    diff.textContent = problem.difficulty || '?';
-
-    header.appendChild(link);
-    if (problem.difficulty) header.appendChild(diff);
-
-    // Solved checkboxes
-    const solvedRow = document.createElement('div');
-    solvedRow.className = 'solved-row';
-
-    state.data.people.forEach(person => {
-      const isSolved = problem.solved?.[person] === true;
-      const lbl = document.createElement('label');
-      lbl.className = 'solved-label' + (isSolved ? ' checked' : '');
-
-      const cb = document.createElement('input');
-      cb.type = 'checkbox';
-      cb.checked = isSolved;
-      cb.dataset.problemId = problem.id;
-      cb.dataset.person = person;
-      cb.addEventListener('change', onSolvedChange);
-
-      lbl.appendChild(cb);
-      lbl.append(` ${person}`);
-      solvedRow.appendChild(lbl);
-    });
+    // Solved buttons
+    const row = document.createElement('div');
+    row.className = 'solved-row';
+    state.data.people.forEach(person => row.appendChild(mkSolveBtn(problem, person)));
 
     // Meta
     const meta = document.createElement('div');
     meta.className = 'card-meta';
     meta.textContent = `Added ${new Date(problem.addedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}`;
 
-    card.appendChild(header);
-    card.appendChild(solvedRow);
-    card.appendChild(meta);
-
-    return card;
+    el.appendChild(top);
+    el.appendChild(link);
+    el.appendChild(row);
+    el.appendChild(meta);
+    return el;
   }
 
-  // ── Event Handlers ─────────────────────────────────────────────────────────
+  function mkSolveBtn(problem, person) {
+    const solved = problem.solved?.[person] === true;
+    const btn = document.createElement('button');
+    btn.className = 'solve-btn' + (solved ? ' on' : '');
+    btn.dataset.problemId = problem.id;
+    btn.dataset.person    = person;
 
-  function onSolvedChange(e) {
-    const { problemId, person } = e.target.dataset;
+    const chk = document.createElement('span');
+    chk.className = 'chk';
+    chk.innerHTML = `<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 5.5,10.5 12,3.5"/></svg>`;
+
+    btn.appendChild(chk);
+    btn.append(person);
+    btn.addEventListener('click', onSolve);
+    return btn;
+  }
+
+  // ── Particles ──────────────────────────────────────────────────────────────
+
+  function burst(el) {
+    const r  = el.getBoundingClientRect();
+    const cx = r.left + r.width  / 2;
+    const cy = r.top  + r.height / 2;
+    const colors = ['#22c55e','#16a34a','#4ade80','#86efac','#2563eb','#60a5fa'];
+    for (let i = 0; i < 12; i++) {
+      const p = document.createElement('div');
+      p.className = 'pt';
+      const sz = 4 + Math.random() * 5;
+      p.style.cssText = `width:${sz}px;height:${sz}px;background:${colors[i % colors.length]};left:${cx}px;top:${cy}px;transform:translate(-50%,-50%)`;
+      document.body.appendChild(p);
+      const a  = (i / 12) * Math.PI * 2 + Math.random() * 0.5;
+      const d  = 28 + Math.random() * 38;
+      p.animate([
+        { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 },
+        { transform: `translate(calc(-50% + ${Math.cos(a)*d}px),calc(-50% + ${Math.sin(a)*d - 8}px)) scale(0)`, opacity: 0 }
+      ], { duration: 520, easing: 'ease-out', fill: 'forwards' }).onfinish = () => p.remove();
+    }
+  }
+
+  // ── Event handlers ─────────────────────────────────────────────────────────
+
+  function onSolve(e) {
+    const btn     = e.currentTarget;
+    const { problemId, person } = btn.dataset;
     const problem = state.data.problems.find(p => p.id === problemId);
     if (!problem) return;
 
     if (!problem.solved) problem.solved = {};
-    problem.solved[person] = e.target.checked;
+    const nowOn = !problem.solved[person];
+    problem.solved[person] = nowOn;
     state.dirty = true;
 
-    // Update label styling without full re-render
-    const lbl = e.target.parentElement;
-    lbl.className = 'solved-label' + (e.target.checked ? ' checked' : '');
+    btn.classList.toggle('on', nowOn);
+    btn.classList.add('popping');
+    btn.addEventListener('animationend', () => btn.classList.remove('popping'), { once: true });
 
-    // Update card border
-    const card = e.target.closest('.problem-card');
-    if (card) {
-      if (isFullySolved(problem)) card.classList.add('fully-solved');
-      else card.classList.remove('fully-solved');
+    if (nowOn) burst(btn);
+
+    // Update border on all matching cards
+    document.querySelectorAll(`.card[data-id="${problemId}"]`).forEach(c => {
+      c.classList.toggle('solved-all', allSolved(problem));
+    });
+
+    if (document.getElementById('filter-unsolved').checked && allSolved(problem)) renderList();
+  }
+
+  async function onUrlInput() {
+    const url       = document.getElementById('form-link').value.trim();
+    const cfFields  = document.getElementById('cf-fields');
+    const manFields = document.getElementById('manual-fields');
+    const fs        = document.getElementById('fetch-status');
+
+    cfFields.classList.remove('on');
+    manFields.classList.remove('on');
+    fs.textContent = '';
+    fs.className   = 'fetch-status';
+
+    if (!url) return;
+    try { new URL(url); } catch { return; }
+
+    const cf = parseCF(url);
+    if (!cf) {
+      manFields.classList.add('on');
+      return;
     }
 
-    // If filter is active, re-render so fully-solved cards disappear
-    if (document.getElementById('filter-unsolved').checked) {
-      renderProblemList();
+    if (state.abortCtrl) state.abortCtrl.abort();
+    const ctrl = new AbortController();
+    state.abortCtrl = ctrl;
+
+    fs.textContent = 'Fetching problem info…';
+    fs.className   = 'fetch-status loading';
+
+    try {
+      const info = await fetchCF(cf.contestId, cf.index, ctrl.signal);
+      document.getElementById('cf-name').value = info.name;
+      document.getElementById('cf-diff').value = info.difficulty ?? '';
+      cfFields.classList.add('on');
+      fs.textContent = '✓ Found: ' + info.name;
+      fs.className   = 'fetch-status ok';
+    } catch (e) {
+      if (e.name === 'AbortError') return;
+      fs.textContent = 'Could not fetch — enter manually.';
+      fs.className   = 'fetch-status fail';
+      manFields.classList.add('on');
     }
   }
 
-  function onAddProblem() {
-    const link = document.getElementById('form-link').value.trim();
-    const difficulty = document.getElementById('form-difficulty').value.trim();
+  function onAdd() {
+    const url = document.getElementById('form-link').value.trim();
+    if (!url) { alert('Please enter a problem URL.'); return; }
+    try { new URL(url); } catch { alert('Please enter a valid URL.'); return; }
 
-    if (!link) { alert('Please enter a problem URL.'); return; }
-    try { new URL(link); } catch { alert('Please enter a valid URL.'); return; }
+    const cfOn  = document.getElementById('cf-fields').classList.contains('on');
+    const manOn = document.getElementById('manual-fields').classList.contains('on');
 
-    const newProblem = {
+    if (!cfOn && !manOn) {
+      alert('Please wait for problem info to load or enter a valid URL.');
+      return;
+    }
+
+    const name = cfOn
+      ? document.getElementById('cf-name').value.trim()
+      : document.getElementById('m-name').value.trim();
+    const rawDiff = cfOn
+      ? document.getElementById('cf-diff').value
+      : document.getElementById('m-diff').value;
+    const difficulty = rawDiff ? parseInt(rawDiff, 10) : null;
+
+    const isDaily = document.getElementById('form-daily').checked;
+
+    const problem = {
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
-      link,
+      link: url,
+      name: name || 'Untitled',
       difficulty,
       addedAt: new Date().toISOString(),
+      isDaily,
+      dailyDate: isDaily ? today() : null,
       solved: Object.fromEntries(state.data.people.map(p => [p, false])),
     };
 
-    state.data.problems.push(newProblem);
+    state.data.problems.push(problem);
     state.dirty = true;
+    resetForm();
+    renderAll();
+  }
 
-    document.getElementById('form-link').value = '';
-    document.getElementById('form-difficulty').value = '';
+  function resetForm() {
+    ['form-link','cf-name','cf-diff','m-name','m-diff'].forEach(id => {
+      document.getElementById(id).value = '';
+    });
+    document.getElementById('form-daily').checked = false;
+    document.getElementById('cf-fields').classList.remove('on');
+    document.getElementById('manual-fields').classList.remove('on');
+    document.getElementById('fetch-status').textContent = '';
     document.getElementById('add-form').classList.add('hidden');
-
-    renderProblemList();
   }
 
-  function showSetupOverlay() {
-    const select = document.getElementById('setup-user');
-    select.innerHTML = '';
-    const people = state.data?.people ?? ['Ruben', 'Ruiming'];
-    people.forEach(name => {
-      const opt = document.createElement('option');
-      opt.value = name;
-      opt.textContent = name;
-      if (name === state.currentUser) opt.selected = true;
-      select.appendChild(opt);
+  function openModal() {
+    const sel = document.getElementById('s-user');
+    sel.innerHTML = '';
+    (state.data?.people ?? ['Ruben', 'Ruiming']).forEach(name => {
+      const o = document.createElement('option');
+      o.value = o.textContent = name;
+      if (name === state.currentUser) o.selected = true;
+      sel.appendChild(o);
     });
-    document.getElementById('setup-pat').value = state.pat ?? '';
-    document.getElementById('setup-overlay').classList.remove('hidden');
+    document.getElementById('s-pat').value = state.pat ?? '';
+    document.getElementById('overlay').classList.remove('hidden');
   }
 
-  function onSetupSave() {
-    const pat = document.getElementById('setup-pat').value.trim();
-    const user = document.getElementById('setup-user').value;
-    if (pat) savePat(pat);
+  function onModalSave() {
+    const pat  = document.getElementById('s-pat').value.trim();
+    const user = document.getElementById('s-user').value;
+    if (pat)  savePat(pat);
     if (user) saveUser(user);
-    document.getElementById('setup-overlay').classList.add('hidden');
+    document.getElementById('overlay').classList.add('hidden');
   }
 
-  function setStatus(msg, isError = false) {
-    const el = document.getElementById('sync-status');
-    el.textContent = msg;
-    el.className = isError ? 'error' : '';
-    if (!isError && msg) {
-      setTimeout(() => { if (el.textContent === msg) el.textContent = ''; }, 4000);
-    }
-  }
-
-  function attachEventListeners() {
+  function attachListeners() {
     document.getElementById('btn-add').addEventListener('click', () => {
-      document.getElementById('add-form').classList.toggle('hidden');
-      document.getElementById('form-link').focus();
+      const f = document.getElementById('add-form');
+      f.classList.toggle('hidden');
+      if (!f.classList.contains('hidden')) document.getElementById('form-link').focus();
     });
-    document.getElementById('form-submit').addEventListener('click', onAddProblem);
-    document.getElementById('form-cancel').addEventListener('click', () => {
-      document.getElementById('add-form').classList.add('hidden');
+
+    let debounce;
+    document.getElementById('form-link').addEventListener('input', () => {
+      clearTimeout(debounce);
+      debounce = setTimeout(onUrlInput, 350);
     });
-    document.getElementById('form-link').addEventListener('keydown', e => {
-      if (e.key === 'Enter') document.getElementById('form-difficulty').focus();
-    });
-    document.getElementById('form-difficulty').addEventListener('keydown', e => {
-      if (e.key === 'Enter') onAddProblem();
-    });
-    document.getElementById('btn-sync').addEventListener('click', async () => {
-      await pullFromGitHub();
-      renderAll();
-    });
-    document.getElementById('btn-save').addEventListener('click', saveToGitHub);
-    document.getElementById('filter-unsolved').addEventListener('change', renderProblemList);
-    document.getElementById('btn-settings').addEventListener('click', showSetupOverlay);
-    document.getElementById('setup-save').addEventListener('click', onSetupSave);
-    document.getElementById('setup-close').addEventListener('click', () => {
-      document.getElementById('setup-overlay').classList.add('hidden');
-    });
-    document.getElementById('setup-overlay').addEventListener('click', e => {
-      if (e.target === document.getElementById('setup-overlay')) {
-        document.getElementById('setup-overlay').classList.add('hidden');
-      }
+
+    document.getElementById('form-submit').addEventListener('click', onAdd);
+    document.getElementById('form-cancel').addEventListener('click', resetForm);
+    document.getElementById('btn-sync').addEventListener('click', async () => { await pull(); renderAll(); });
+    document.getElementById('btn-save').addEventListener('click', save);
+    document.getElementById('filter-unsolved').addEventListener('change', renderList);
+    document.getElementById('sort-by').addEventListener('change', renderList);
+    document.getElementById('btn-settings').addEventListener('click', openModal);
+    document.getElementById('modal-save').addEventListener('click', onModalSave);
+    document.getElementById('modal-close').addEventListener('click', () => document.getElementById('overlay').classList.add('hidden'));
+    document.getElementById('overlay').addEventListener('click', e => {
+      if (e.target === document.getElementById('overlay')) document.getElementById('overlay').classList.add('hidden');
     });
 
     window.addEventListener('beforeunload', e => {
-      if (state.dirty) {
-        e.preventDefault();
-        e.returnValue = '';
-      }
+      if (state.dirty) { e.preventDefault(); e.returnValue = ''; }
     });
   }
 
   // ── Init ───────────────────────────────────────────────────────────────────
 
   async function init() {
-    loadFromStorage();
-    attachEventListeners();
-    await pullFromGitHub();
+    loadStorage();
+    attachListeners();
+    await pull();
     renderAll();
-    if (!state.pat || !state.currentUser) {
-      showSetupOverlay();
-    }
+    if (!state.pat || !state.currentUser) openModal();
   }
 
   document.addEventListener('DOMContentLoaded', init);
