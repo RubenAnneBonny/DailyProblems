@@ -573,7 +573,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -703,7 +703,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": false,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -729,7 +729,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
