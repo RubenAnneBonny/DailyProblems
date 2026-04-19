@@ -402,7 +402,7 @@
     </div>
 
     <div id="manual-fields">
-      <div class="cf-note">Not a Codeforces URL — enter details manually.</div>
+      <div id="manual-note" class="cf-note">Not a Codeforces URL — enter details manually.</div>
       <div class="form-row">
         <div class="fg">
           <label for="m-name">Problem Name</label>
@@ -509,11 +509,14 @@
   }
 
   async function fetchCF(contestId, index, signal) {
-    const res  = await fetch(`https://codeforces.com/api/contest.standings?contestId=${contestId}&from=1&count=1`, { signal });
+    // problemset.problems supports CORS; contest.standings does not
+    const res  = await fetch(`https://codeforces.com/api/problemset.problems`, { signal });
     if (!res.ok) throw new Error('API error');
     const data = await res.json();
     if (data.status !== 'OK') throw new Error(data.comment || 'API error');
-    const prob = data.result.problems.find(p => p.index === index);
+    const prob = data.result.problems.find(
+      p => String(p.contestId) === String(contestId) && p.index === index
+    );
     if (!prob) throw new Error('Problem not found');
     return { name: prob.name, difficulty: prob.rating ?? null };
   }
@@ -811,8 +814,9 @@
       fs.className   = 'fetch-status ok';
     } catch (e) {
       if (e.name === 'AbortError') return;
-      fs.textContent = 'Could not fetch — enter manually.';
+      fs.textContent = 'Could not fetch info — enter manually.';
       fs.className   = 'fetch-status fail';
+      document.getElementById('manual-note').textContent = 'Could not fetch problem info — enter details manually.';
       manFields.classList.add('on');
     }
   }
@@ -865,6 +869,7 @@
     document.getElementById('cf-fields').classList.remove('on');
     document.getElementById('manual-fields').classList.remove('on');
     document.getElementById('fetch-status').textContent = '';
+    document.getElementById('manual-note').textContent = 'Not a Codeforces URL — enter details manually.';
     document.getElementById('add-form').classList.add('hidden');
   }
 
