@@ -226,7 +226,15 @@
       gap: 8px;
       margin-bottom: 3px;
     }
-    .card-name { font-weight: 600; font-size: 0.93rem; flex: 1; }
+    .card-name {
+      font-weight: 700;
+      font-size: 1rem;
+      flex: 1;
+      color: var(--gray-800);
+      text-decoration: none;
+      line-height: 1.3;
+    }
+    .card-name:hover { color: var(--blue); }
 
     .card-badges { display: flex; gap: 5px; align-items: center; flex-shrink: 0; }
 
@@ -584,7 +592,11 @@
         body: JSON.stringify(body),
       });
       if (res.status === 409) { setStatus('Conflict — pull first, then re-save', true); return; }
-      if (res.status === 401 || res.status === 403) { setStatus('Auth failed — check PAT in Settings', true); return; }
+      if (res.status === 401 || res.status === 403) {
+        const e = await res.json().catch(() => ({}));
+        setStatus(`Auth error ${res.status}: ${e.message || '(no message)'} — check PAT has Contents: Read & write`, true);
+        return;
+      }
       if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.message || `HTTP ${res.status}`); }
       const result = await res.json();
       state.sha = result.content.sha;
@@ -688,9 +700,12 @@
     const top = document.createElement('div');
     top.className = 'card-top';
 
-    const name = document.createElement('span');
+    const name = document.createElement('a');
     name.className = 'card-name';
     name.textContent = problem.name || 'Untitled';
+    name.href   = problem.link;
+    name.target = '_blank';
+    name.rel    = 'noopener noreferrer';
 
     const badges = document.createElement('div');
     badges.className = 'card-badges';
