@@ -392,6 +392,54 @@
       white-space: nowrap;
     }
 
+    .delete-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      padding: 0;
+      border-radius: 6px;
+      background: transparent;
+      border: none;
+      color: var(--gray-300);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.15s, color 0.15s;
+    }
+    .delete-btn:hover { background: #fee2e2; color: var(--red); }
+
+    /* Confirm dialog */
+    #confirm-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 300;
+      padding: 16px;
+      backdrop-filter: blur(2px);
+    }
+    #confirm-overlay.hidden { display: none; }
+    #confirm-modal {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: 0 24px 48px rgba(0,0,0,0.18);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    #confirm-modal h3 { font-size: 1rem; color: var(--gray-900); }
+    #confirm-modal p  { font-size: 0.875rem; color: var(--gray-500); line-height: 1.5; }
+    #confirm-modal strong { color: var(--gray-800); }
+    .confirm-btns { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
+    #confirm-delete { background: var(--red); color: white; }
+    #confirm-cancel { background: var(--gray-100); color: var(--gray-600); border: 1px solid var(--gray-200); }
+
     /* Particles */
     .pt {
       position: fixed;
@@ -552,6 +600,18 @@
   </div>
 
   <div id="problem-list"></div>
+</div>
+
+<!-- Confirm delete dialog -->
+<div id="confirm-overlay" class="hidden">
+  <div id="confirm-modal">
+    <h3>Remove problem?</h3>
+    <p>This will permanently remove <strong id="confirm-name"></strong> from the list.</p>
+    <div class="confirm-btns">
+      <button id="confirm-cancel">Cancel</button>
+      <button id="confirm-delete">Remove</button>
+    </div>
+  </div>
 </div>
 
 <!-- Settings modal -->
@@ -870,6 +930,14 @@
     meta.textContent = new Date(problem.addedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
     solved.appendChild(meta);
 
+    const delBtn = document.createElement('button');
+    delBtn.className = 'delete-btn';
+    delBtn.title = 'Remove problem';
+    delBtn.dataset.problemId = problem.id;
+    delBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>`;
+    delBtn.addEventListener('click', onDeleteClick);
+    solved.appendChild(delBtn);
+
     el.appendChild(inner);
     el.appendChild(solved);
     return el;
@@ -948,6 +1016,26 @@
   }
 
   // ── Event handlers ───────────────────────────────────────────────
+
+  let pendingDeleteId = null;
+
+  function onDeleteClick(e) {
+    const id      = e.currentTarget.dataset.problemId;
+    const problem = state.data.problems.find(p => p.id === id);
+    if (!problem) return;
+    pendingDeleteId = id;
+    document.getElementById('confirm-name').textContent = problem.name || 'this problem';
+    document.getElementById('confirm-overlay').classList.remove('hidden');
+  }
+
+  function onConfirmDelete() {
+    if (!pendingDeleteId) return;
+    state.data.problems = state.data.problems.filter(p => p.id !== pendingDeleteId);
+    pendingDeleteId = null;
+    state.dirty = true;
+    document.getElementById('confirm-overlay').classList.add('hidden');
+    renderAll();
+  }
 
   function onSolve(e) {
     const btn     = e.currentTarget;
@@ -1103,6 +1191,11 @@
     document.getElementById('btn-settings').addEventListener('click', openModal);
     document.getElementById('modal-save').addEventListener('click', onModalSave);
     document.getElementById('modal-close').addEventListener('click', () => document.getElementById('overlay').classList.add('hidden'));
+    document.getElementById('confirm-delete').addEventListener('click', onConfirmDelete);
+    document.getElementById('confirm-cancel').addEventListener('click', () => {
+      pendingDeleteId = null;
+      document.getElementById('confirm-overlay').classList.add('hidden');
+    });
     document.getElementById('overlay').addEventListener('click', e => {
       if (e.target === document.getElementById('overlay')) document.getElementById('overlay').classList.add('hidden');
     });
