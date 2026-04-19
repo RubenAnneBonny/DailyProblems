@@ -391,7 +391,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -561,6 +561,188 @@
       "solved": {
         "Ruben": true,
         "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642380496-s1shz",
+      "link": "https://codeforces.com/problemset/problem/2180/D",
+      "name": "Insolvable Disks",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:46:20.496Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642399121-mlh0w",
+      "link": "https://codeforces.com/problemset/problem/1660/F1",
+      "name": "Promising String (easy version)",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:46:39.121Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642413803-nwsah",
+      "link": "https://codeforces.com/problemset/problem/2174/B",
+      "name": "Wishing Cards",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:46:53.803Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642427000-zjz26",
+      "link": "https://codeforces.com/problemset/problem/1722/F",
+      "name": "L-shapes",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:47:07.000Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642454559-d5ohk",
+      "link": "https://codeforces.com/problemset/problem/296/B",
+      "name": "Yaroslav and Two Strings",
+      "difficulty": 2000,
+      "addedAt": "2026-04-19T23:47:34.559Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642462318-6t418",
+      "link": "https://codeforces.com/problemset/problem/1950/F",
+      "name": "0, 1, 2, Tree!",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:47:42.318Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642478615-f92qu",
+      "link": "https://codeforces.com/problemset/problem/2173/D",
+      "name": "Taiga's Carry Chains",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:47:58.615Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642494004-gdacd",
+      "link": "https://codeforces.com/contest/2189/problem/D1",
+      "name": "Little String (Easy Version)",
+      "difficulty": 1900,
+      "addedAt": "2026-04-19T23:48:14.004Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642516012-ruupo",
+      "link": "https://codeforces.com/problemset/problem/2092/D",
+      "name": "Mishkin Energizer",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:48:36.012Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642598372-fvqcc",
+      "link": "https://codeforces.com/contest/2154/problem/C1",
+      "name": "No Cost Too Great (Easy Version)",
+      "difficulty": 1400,
+      "addedAt": "2026-04-19T23:49:58.372Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776642606581-5ygmm",
+      "link": "https://codeforces.com/contest/2154/problem/C2",
+      "name": "No Cost Too Great (Hard Version)",
+      "difficulty": 2000,
+      "addedAt": "2026-04-19T23:50:06.581Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642631973-yo0u3",
+      "link": "https://codeforces.com/problemset/problem/2150/B",
+      "name": "Grid Counting",
+      "difficulty": 1700,
+      "addedAt": "2026-04-19T23:50:31.973Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642644618-h6vpc",
+      "link": "https://codeforces.com/problemset/problem/2078/D",
+      "name": "Scammy Game Ad",
+      "difficulty": 1800,
+      "addedAt": "2026-04-19T23:50:44.618Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1776642670620-2fx81",
+      "link": "https://codeforces.com/problemset/problem/2153/C",
+      "name": "Symmetrical Polygons",
+      "difficulty": 1500,
+      "addedAt": "2026-04-19T23:51:10.620Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
       }
     }
   ]
