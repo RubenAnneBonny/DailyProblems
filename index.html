@@ -549,7 +549,7 @@
     setStatus('Fetching…');
     try {
       const hdrs = { 'Accept': 'application/vnd.github+json' };
-      if (state.pat) hdrs['Authorization'] = `token ${state.pat}`;
+      if (state.pat) hdrs['Authorization'] = `Bearer ${state.pat}`;
       const res = await fetch(API_URL, { headers: hdrs });
       if (res.status === 404) {
         state.data = { people: ['Ruben', 'Ruiming'], problems: [] };
@@ -577,7 +577,7 @@
       const res = await fetch(API_URL, {
         method: 'PUT',
         headers: {
-          'Authorization': `token ${state.pat}`,
+          'Authorization': `Bearer ${state.pat}`,
           'Content-Type': 'application/json',
           'Accept': 'application/vnd.github+json',
         },
