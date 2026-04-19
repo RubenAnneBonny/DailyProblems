@@ -6,160 +6,190 @@
   <title>Daily Problems</title>
   <style>
     :root {
-      --blue: #2563eb;
-      --blue-light: #dbeafe;
-      --green: #16a34a;
-      --green-light: #dcfce7;
-      --green-mid: #22c55e;
-      --red: #dc2626;
-      --yellow-bg: #fef9c3;
-      --yellow-border: #fde68a;
-      --yellow-text: #92400e;
-      --gray-50: #f9fafb;
-      --gray-100: #f3f4f6;
-      --gray-200: #e5e7eb;
-      --gray-400: #9ca3af;
-      --gray-500: #6b7280;
-      --gray-600: #4b5563;
-      --gray-800: #1f2937;
-      --radius: 10px;
-      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --blue:         #2563eb;
+      --blue-light:   #dbeafe;
+      --blue-dark:    #1e40af;
+      --green:        #16a34a;
+      --green-light:  #dcfce7;
+      --green-mid:    #22c55e;
+      --red:          #dc2626;
+      --gray-50:      #f8fafc;
+      --gray-100:     #f1f5f9;
+      --gray-200:     #e2e8f0;
+      --gray-300:     #cbd5e1;
+      --gray-400:     #94a3b8;
+      --gray-500:     #64748b;
+      --gray-600:     #475569;
+      --gray-700:     #334155;
+      --gray-800:     #1e293b;
+      --gray-900:     #0f172a;
+      --radius:       12px;
+      --radius-sm:    8px;
+      --shadow-sm:    0 1px 2px rgba(0,0,0,0.06);
+      --shadow:       0 1px 4px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-md:    0 4px 16px rgba(0,0,0,0.1);
+
+      /* Difficulty colours */
+      --diff-newbie:   #94a3b8;
+      --diff-easy:     #22c55e;
+      --diff-medium:   #eab308;
+      --diff-hard:     #f97316;
+      --diff-harder:   #ef4444;
+      --diff-expert:   #a855f7;
+      --diff-master:   #ec4899;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
       background: var(--gray-50);
       color: var(--gray-800);
       min-height: 100vh;
     }
 
-    /* ── Banner ── */
+    /* ── Banner ─────────────────────────────────────────────── */
     #daily-banner {
-      padding: 11px 20px;
-      font-weight: 600;
-      font-size: 0.9rem;
+      padding: 13px 24px;
       text-align: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
     }
-    #daily-banner.ruben   { background: var(--blue-light); color: #1e40af; }
-    #daily-banner.ruiming { background: var(--green-light); color: #15803d; }
+    #daily-banner.ruben   { background: linear-gradient(135deg,#dbeafe,#eff6ff); color: var(--blue-dark); }
+    #daily-banner.ruiming { background: linear-gradient(135deg,#dcfce7,#f0fdf4); color: #15803d; }
 
-    /* ── Layout ── */
+    /* ── Layout ─────────────────────────────────────────────── */
     #main-container {
-      max-width: 780px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 16px;
+      padding: 20px 16px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 16px;
     }
 
-    /* ── Daily section ── */
+    /* ── Daily section ──────────────────────────────────────── */
     #daily-section {
       background: white;
-      border: 2px solid var(--blue);
       border-radius: var(--radius);
-      padding: 14px 16px;
+      border: 1.5px solid var(--blue);
       box-shadow: var(--shadow-md);
+      overflow: hidden;
     }
-    .section-label {
+    .daily-header {
+      background: linear-gradient(135deg, #eff6ff, #dbeafe);
+      padding: 10px 16px;
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--blue);
-      margin-bottom: 10px;
+      letter-spacing: 0.1em;
+      color: var(--blue-dark);
     }
-    #daily-empty {
-      color: var(--gray-400);
-      font-size: 0.88rem;
-    }
+    #daily-body { padding: 14px 16px; }
+    #daily-body .card { box-shadow: none; border: none; padding: 0; }
 
-    /* ── Toolbar ── */
+    /* ── Toolbar ─────────────────────────────────────────────── */
     #toolbar {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
+      gap: 8px;
       align-items: center;
     }
 
-    /* ── Buttons ── */
+    .btn-group { display: flex; gap: 6px; }
+
     button {
-      padding: 8px 14px;
+      padding: 8px 16px;
       border: none;
-      border-radius: var(--radius);
+      border-radius: var(--radius-sm);
       cursor: pointer;
-      font-size: 0.875rem;
-      font-weight: 500;
-      transition: opacity 0.15s, transform 0.1s;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: all 0.15s;
+      white-space: nowrap;
     }
-    button:hover   { opacity: 0.85; }
-    button:active  { transform: scale(0.97); }
+    button:hover   { filter: brightness(0.93); }
+    button:active  { transform: scale(0.96); }
     button:disabled { opacity: 0.45; cursor: not-allowed; }
 
     #btn-add      { background: var(--blue); color: white; }
-    #btn-sync     { background: var(--gray-200); color: var(--gray-800); }
+    #btn-sync     { background: var(--gray-100); color: var(--gray-700); border: 1px solid var(--gray-200); }
     #btn-save     { background: var(--green); color: white; }
     #btn-settings { background: white; color: var(--gray-600); border: 1px solid var(--gray-200); }
 
-    #sync-status { font-size: 0.78rem; color: var(--gray-400); margin-left: auto; }
+    #sync-status {
+      font-size: 0.76rem;
+      color: var(--gray-400);
+      margin-left: auto;
+      flex-shrink: 0;
+    }
     #sync-status.err { color: var(--red); font-weight: 500; }
 
-    /* ── Add form ── */
+    /* ── Add form ────────────────────────────────────────────── */
     #add-form {
       background: white;
       border: 1px solid var(--gray-200);
       border-radius: var(--radius);
-      padding: 16px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
       box-shadow: var(--shadow);
     }
     #add-form.hidden { display: none; }
 
     .form-row { display: flex; flex-wrap: wrap; gap: 10px; }
 
-    .fg { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 160px; }
+    .fg { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 160px; }
     .fg.narrow { flex: 0 0 130px; min-width: 0; }
-    .fg label { font-size: 0.78rem; color: var(--gray-600); font-weight: 600; }
+    .fg label {
+      font-size: 0.72rem;
+      color: var(--gray-500);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
 
     input[type="url"],
     input[type="text"],
     input[type="number"],
     input[type="password"],
     select {
-      padding: 8px 10px;
-      border: 1px solid var(--gray-200);
-      border-radius: 8px;
+      padding: 9px 12px;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-sm);
       font-size: 0.875rem;
       width: 100%;
       background: white;
       color: var(--gray-800);
+      transition: border-color 0.15s, box-shadow 0.15s;
     }
-    input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: -1px; border-color: transparent; }
-    input[readonly] { background: var(--gray-100); color: var(--gray-500); cursor: default; }
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+    }
+    input[readonly] { background: var(--gray-100); color: var(--gray-500); }
 
     #fetch-status { font-size: 0.76rem; min-height: 14px; }
     #fetch-status.loading { color: var(--blue); }
-    #fetch-status.ok      { color: var(--green); }
+    #fetch-status.ok      { color: var(--green); font-weight: 500; }
     #fetch-status.fail    { color: var(--red); }
 
     #cf-fields    { display: none; }
     #cf-fields.on { display: flex; }
-
     #manual-fields    { display: none; }
     #manual-fields.on { display: flex; flex-direction: column; gap: 10px; }
 
     .cf-note {
       font-size: 0.78rem;
-      background: var(--yellow-bg);
-      border: 1px solid var(--yellow-border);
-      color: var(--yellow-text);
-      border-radius: 7px;
-      padding: 6px 10px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #92400e;
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
     }
 
     .daily-check {
@@ -169,22 +199,29 @@
       font-size: 0.875rem;
       color: var(--gray-600);
       cursor: pointer;
+      padding: 2px 0;
     }
     .daily-check input { width: 16px; height: 16px; accent-color: var(--blue); cursor: pointer; }
 
     .form-btns { display: flex; gap: 8px; }
     #form-submit { background: var(--blue); color: white; }
-    #form-cancel { background: var(--gray-100); color: var(--gray-600); }
+    #form-cancel { background: var(--gray-100); color: var(--gray-600); border: 1px solid var(--gray-200); }
 
-    /* ── List controls ── */
+    /* ── List controls ───────────────────────────────────────── */
     #list-controls {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       flex-wrap: wrap;
     }
-    .list-title { font-size: 0.88rem; font-weight: 700; color: var(--gray-800); flex: 1; }
-
+    .list-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--gray-500);
+      flex: 1;
+    }
     .filter-label {
       display: flex;
       align-items: center;
@@ -192,176 +229,235 @@
       font-size: 0.82rem;
       cursor: pointer;
       color: var(--gray-600);
+      font-weight: 500;
     }
-    .filter-label input { width: 15px; height: 15px; cursor: pointer; }
-
-    .sort-wrap { display: flex; align-items: center; gap: 5px; font-size: 0.8rem; color: var(--gray-500); }
+    .filter-label input { width: 15px; height: 15px; cursor: pointer; accent-color: var(--blue); }
+    .sort-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      font-weight: 500;
+    }
     .sort-wrap select {
-      padding: 5px 8px;
-      border: 1px solid var(--gray-200);
-      border-radius: 7px;
+      padding: 5px 10px;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-sm);
       font-size: 0.8rem;
       background: white;
       cursor: pointer;
     }
 
-    /* ── Problem cards ── */
+    /* ── Problem cards ───────────────────────────────────────── */
     #problem-list { display: flex; flex-direction: column; gap: 10px; }
 
     .card {
       background: white;
-      border: 1px solid var(--gray-200);
       border-radius: var(--radius);
-      padding: 13px 15px;
       box-shadow: var(--shadow);
-      transition: border-color 0.25s;
+      overflow: hidden;
+      border-left: 4px solid var(--gray-200);
+      transition: box-shadow 0.2s, border-color 0.3s;
     }
-    .card.solved-all { border-left: 3px solid var(--green-mid); }
-    .card.is-daily   { border-top: 2px solid var(--blue); }
+    .card:hover { box-shadow: var(--shadow-md); }
+    .card.is-daily { outline: 1.5px solid var(--blue); outline-offset: 0; }
 
-    .card-top {
+    /* difficulty left border colours */
+    .card.d-newbie  { border-left-color: var(--diff-newbie); }
+    .card.d-easy    { border-left-color: var(--diff-easy); }
+    .card.d-medium  { border-left-color: var(--diff-medium); }
+    .card.d-hard    { border-left-color: var(--diff-hard); }
+    .card.d-harder  { border-left-color: var(--diff-harder); }
+    .card.d-expert  { border-left-color: var(--diff-expert); }
+    .card.d-master  { border-left-color: var(--diff-master); }
+
+    .card-inner { padding: 14px 16px 0; }
+
+    /* Title row */
+    .card-title-row {
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
-      gap: 8px;
-      margin-bottom: 3px;
+      gap: 10px;
+      margin-bottom: 5px;
     }
-    .card-name {
-      font-weight: 700;
-      font-size: 1rem;
+    .card-title {
       flex: 1;
-      color: var(--gray-800);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-900);
       text-decoration: none;
-      line-height: 1.3;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    .card-name:hover { color: var(--blue); }
+    .card-title:hover { color: var(--blue); }
 
-    .card-badges { display: flex; gap: 5px; align-items: center; flex-shrink: 0; }
+    .card-badges { display: flex; gap: 5px; align-items: center; flex-shrink: 0; padding-top: 2px; }
 
     .badge {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 700;
-      padding: 2px 9px;
+      padding: 3px 8px;
       border-radius: 20px;
+      letter-spacing: 0.02em;
     }
-    .badge-daily { background: var(--blue-light); color: var(--blue); }
-    .badge-diff  { background: var(--gray-100); color: var(--gray-600); }
+    .badge-daily  { background: var(--blue-light); color: var(--blue-dark); }
+    .badge-cf     { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+    .badge-diff   { background: var(--gray-100); color: var(--gray-600); }
 
-    /* Colour-coded difficulty */
-    .d-green  { background: #dcfce7; color: #15803d; }
-    .d-yellow { background: #fef9c3; color: #92400e; }
-    .d-orange { background: #ffedd5; color: #9a3412; }
-    .d-red    { background: #fee2e2; color: #991b1b; }
-    .d-purple { background: #f3e8ff; color: #6b21a8; }
+    .badge-newbie { background: #f1f5f9; color: #475569; }
+    .badge-easy   { background: #dcfce7; color: #15803d; }
+    .badge-medium { background: #fef9c3; color: #92400e; }
+    .badge-hard   { background: #ffedd5; color: #9a3412; }
+    .badge-harder { background: #fee2e2; color: #991b1b; }
+    .badge-expert { background: #f3e8ff; color: #7e22ce; }
+    .badge-master { background: #fce7f3; color: #9d174d; }
 
-    .card-link {
-      display: block;
-      color: var(--blue);
+    /* URL line */
+    .card-url {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.76rem;
+      color: var(--gray-400);
       text-decoration: none;
-      font-size: 0.78rem;
-      word-break: break-all;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      transition: color 0.15s;
     }
-    .card-link:hover { text-decoration: underline; }
+    .card-url:hover { color: var(--blue); }
 
-    /* ── Solve buttons ── */
-    .solved-row { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 9px; }
+    /* Solved section */
+    .card-solved {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: var(--gray-50);
+      border-top: 1px solid var(--gray-100);
+      flex-wrap: wrap;
+    }
 
     .solve-btn {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
-      padding: 5px 13px;
+      gap: 7px;
+      padding: 6px 14px;
       border-radius: 20px;
       font-size: 0.8rem;
       font-weight: 600;
       cursor: pointer;
-      border: 2px solid var(--gray-200);
+      border: 1.5px solid var(--gray-200);
       background: white;
       color: var(--gray-500);
-      transition: border-color 0.2s, background 0.2s, color 0.2s;
-      position: relative;
+      transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.1s, box-shadow 0.2s;
       user-select: none;
+      letter-spacing: 0.01em;
     }
-    .solve-btn:hover { border-color: var(--green-mid); color: var(--green); }
+    .solve-btn:hover {
+      border-color: var(--green-mid);
+      color: var(--green);
+      box-shadow: 0 0 0 3px rgba(34,197,94,0.12);
+    }
     .solve-btn.on {
       border-color: var(--green-mid);
       background: var(--green-light);
       color: var(--green);
+      box-shadow: none;
     }
+
     .solve-btn .chk {
-      width: 13px; height: 13px;
-      opacity: 0; transform: scale(0);
-      transition: opacity 0.18s, transform 0.18s;
+      width: 15px; height: 15px;
+      opacity: 0; transform: scale(0) rotate(-45deg);
+      transition: opacity 0.2s, transform 0.25s cubic-bezier(.34,1.56,.64,1);
       flex-shrink: 0;
     }
-    .solve-btn.on .chk { opacity: 1; transform: scale(1); }
+    .solve-btn.on .chk { opacity: 1; transform: scale(1) rotate(0deg); }
 
     @keyframes pop {
       0%   { transform: scale(1); }
-      35%  { transform: scale(1.25); }
-      65%  { transform: scale(0.93); }
+      30%  { transform: scale(1.3); }
+      60%  { transform: scale(0.9); }
+      80%  { transform: scale(1.05); }
       100% { transform: scale(1); }
     }
-    .solve-btn.popping { animation: pop 0.32s cubic-bezier(.36,.07,.19,.97); }
+    .solve-btn.popping { animation: pop 0.4s cubic-bezier(.36,.07,.19,.97); }
 
-    /* particle */
-    .pt {
-      position: fixed;
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
+    .card-meta {
+      margin-left: auto;
+      font-size: 0.72rem;
+      color: var(--gray-400);
+      white-space: nowrap;
     }
 
-    .card-meta { font-size: 0.73rem; color: var(--gray-400); }
+    /* Particles */
+    .pt {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      will-change: transform, opacity;
+    }
 
     .empty-state {
       text-align: center;
-      padding: 48px 0;
+      padding: 56px 0;
       color: var(--gray-400);
       font-size: 0.9rem;
     }
+    .empty-state span { display: block; font-size: 2rem; margin-bottom: 10px; }
 
-    /* ── Settings modal ── */
+    /* ── Settings modal ──────────────────────────────────────── */
     #overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.42);
+      background: rgba(15,23,42,0.5);
       display: flex;
       align-items: center;
       justify-content: center;
       z-index: 200;
       padding: 16px;
+      backdrop-filter: blur(2px);
     }
     #overlay.hidden { display: none; }
 
     #modal {
       background: white;
-      border-radius: 14px;
-      padding: 24px;
+      border-radius: 16px;
+      padding: 28px;
       width: 100%;
-      max-width: 420px;
+      max-width: 440px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      gap: 18px;
+      box-shadow: 0 24px 48px rgba(0,0,0,0.18);
     }
-    #modal h2 { font-size: 1.05rem; }
+    #modal h2 { font-size: 1.1rem; color: var(--gray-900); }
 
     .mg { display: flex; flex-direction: column; gap: 6px; }
-    .mg label { font-size: 0.82rem; font-weight: 600; color: var(--gray-600); }
-    .mg .note { font-size: 0.73rem; color: var(--gray-400); line-height: 1.5; }
+    .mg label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-500);
+    }
+    .mg .note {
+      font-size: 0.74rem;
+      color: var(--gray-400);
+      line-height: 1.6;
+    }
 
-    .modal-btns { display: flex; gap: 8px; justify-content: flex-end; }
+    .modal-btns { display: flex; gap: 8px; justify-content: flex-end; margin-top: 4px; }
     #modal-save  { background: var(--blue); color: white; }
-    #modal-close { background: var(--gray-100); color: var(--gray-600); }
+    #modal-close { background: var(--gray-100); color: var(--gray-600); border: 1px solid var(--gray-200); }
 
-    /* ── Responsive ── */
+    /* ── Responsive ──────────────────────────────────────────── */
     @media (max-width: 520px) {
-      button { padding: 7px 11px; font-size: 0.82rem; }
-      #sync-status { margin-left: 0; width: 100%; }
-      .card-top { flex-wrap: wrap; }
-      .sort-wrap { width: 100%; }
+      button { padding: 7px 12px; }
+      #sync-status { margin-left: 0; width: 100%; order: 10; }
+      .card-title { font-size: 0.95rem; }
     }
   </style>
 </head>
@@ -373,18 +469,22 @@
 
   <!-- Daily problem -->
   <div id="daily-section">
-    <div class="section-label">Today's Daily Problem</div>
+    <div class="daily-header">Today's Daily Problem</div>
     <div id="daily-body">
-      <span id="daily-empty" style="color:var(--gray-400);font-size:.88rem">No daily problem added yet today.</span>
+      <div style="padding:14px 16px;color:var(--gray-400);font-size:.88rem">No daily problem added yet today.</div>
     </div>
   </div>
 
   <!-- Toolbar -->
   <div id="toolbar">
-    <button id="btn-add">+ Add Problem</button>
-    <button id="btn-sync">↓ Pull</button>
-    <button id="btn-save">↑ Save to GitHub</button>
-    <button id="btn-settings">⚙ Settings</button>
+    <div class="btn-group">
+      <button id="btn-add">+ Add Problem</button>
+    </div>
+    <div class="btn-group">
+      <button id="btn-sync">↓ Pull</button>
+      <button id="btn-save">↑ Save</button>
+    </div>
+    <button id="btn-settings">⚙</button>
     <span id="sync-status"></span>
   </div>
 
@@ -410,7 +510,7 @@
     </div>
 
     <div id="manual-fields">
-      <div id="manual-note" class="cf-note">Not a Codeforces URL — enter details manually.</div>
+      <div class="cf-note" id="manual-note">Not a Codeforces URL — enter details manually.</div>
       <div class="form-row">
         <div class="fg">
           <label for="m-name">Problem Name</label>
@@ -466,8 +566,9 @@
       <label for="s-pat">GitHub Personal Access Token</label>
       <input id="s-pat" type="password" placeholder="ghp_...">
       <span class="note">
-        Needed to save changes. Create at GitHub → Settings → Developer settings → Personal access tokens (classic).<br>
-        Scope: <strong>public_repo</strong>. Stored in your browser only.
+        Needed to save changes.<br>
+        GitHub → Settings → Developer settings → Personal access tokens → <strong>Tokens (classic)</strong> → Generate new token → check <strong>repo</strong>.<br>
+        Do <em>not</em> use a fine-grained token. Stored in your browser only.
       </span>
     </div>
     <div class="modal-btns">
@@ -491,7 +592,7 @@
     pendingUrl: null,
   };
 
-  // ── Storage ────────────────────────────────────────────────────────────────
+  // ── Storage ──────────────────────────────────────────────────────
 
   function loadStorage() {
     state.pat         = localStorage.getItem('dp_pat')  || null;
@@ -501,7 +602,7 @@
   const savePat  = p => { state.pat         = p; localStorage.setItem('dp_pat',  p); };
   const saveUser = u => { state.currentUser = u; localStorage.setItem('dp_user', u); };
 
-  // ── Codeforces ─────────────────────────────────────────────────────────────
+  // ── Codeforces ───────────────────────────────────────────────────
 
   function parseCF(url) {
     const ps = [
@@ -516,7 +617,6 @@
     return null;
   }
 
-  // Cache so we only load all CF problems once per session
   let cfCache = null;
 
   function loadCFProblems() {
@@ -551,13 +651,13 @@
     return { name: prob.name, difficulty: prob.rating ?? null };
   }
 
-  // ── GitHub API ─────────────────────────────────────────────────────────────
+  // ── GitHub API ───────────────────────────────────────────────────
 
   async function pull() {
     setStatus('Fetching…');
     try {
       const hdrs = { 'Accept': 'application/vnd.github+json' };
-      if (state.pat) hdrs['Authorization'] = `Bearer ${state.pat}`;
+      if (state.pat) hdrs['Authorization'] = `token ${state.pat}`;
       const res = await fetch(API_URL, { headers: hdrs });
       if (res.status === 404) {
         state.data = { people: ['Ruben', 'Ruiming'], problems: [] };
@@ -585,7 +685,7 @@
       const res = await fetch(API_URL, {
         method: 'PUT',
         headers: {
-          'Authorization': `Bearer ${state.pat}`,
+          'Authorization': `token ${state.pat}`,
           'Content-Type': 'application/json',
           'Accept': 'application/vnd.github+json',
         },
@@ -594,7 +694,7 @@
       if (res.status === 409) { setStatus('Conflict — pull first, then re-save', true); return; }
       if (res.status === 401 || res.status === 403) {
         const e = await res.json().catch(() => ({}));
-        setStatus(`Auth error ${res.status}: ${e.message || '(no message)'} — check PAT has Contents: Read & write`, true);
+        setStatus(`Auth error ${res.status}: ${e.message || '(no message)'} — check PAT has repo scope`, true);
         return;
       }
       if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.message || `HTTP ${res.status}`); }
@@ -602,24 +702,28 @@
       state.sha = result.content.sha;
       localStorage.setItem('dp_sha', state.sha);
       state.dirty = false;
-      setStatus('Saved!');
+      setStatus('Saved ✓');
     } catch (e) { setStatus('Save failed: ' + e.message, true); }
     finally { document.getElementById('btn-save').disabled = false; }
   }
 
-  // ── Helpers ────────────────────────────────────────────────────────────────
+  // ── Helpers ──────────────────────────────────────────────────────
 
-  const today   = () => new Date().toISOString().slice(0, 10);
+  const today     = () => new Date().toISOString().slice(0, 10);
   const allSolved = p => state.data.people.every(n => p.solved?.[n] === true);
 
-  function diffClass(d) {
-    if (!d)       return '';
-    if (d < 1200) return 'd-green';
-    if (d < 1600) return 'd-yellow';
-    if (d < 2000) return 'd-orange';
-    if (d < 2400) return 'd-red';
-    return 'd-purple';
+  function diffInfo(d) {
+    if (!d)       return { cls: '',         badgeCls: 'badge-diff',   label: '?' };
+    if (d < 1200) return { cls: 'd-newbie', badgeCls: 'badge-newbie', label: d };
+    if (d < 1400) return { cls: 'd-easy',   badgeCls: 'badge-easy',   label: d };
+    if (d < 1800) return { cls: 'd-medium', badgeCls: 'badge-medium', label: d };
+    if (d < 2100) return { cls: 'd-hard',   badgeCls: 'badge-hard',   label: d };
+    if (d < 2400) return { cls: 'd-harder', badgeCls: 'badge-harder', label: d };
+    if (d < 2800) return { cls: 'd-expert', badgeCls: 'badge-expert', label: d };
+    return         { cls: 'd-master', badgeCls: 'badge-master', label: d };
   }
+
+  function isCFUrl(url) { return /codeforces\.com/.test(url); }
 
   function setStatus(msg, isErr = false) {
     const el = document.getElementById('sync-status');
@@ -628,7 +732,7 @@
     if (!isErr && msg) setTimeout(() => { if (el.textContent === msg) el.textContent = ''; }, 4000);
   }
 
-  // ── Render ─────────────────────────────────────────────────────────────────
+  // ── Render ───────────────────────────────────────────────────────
 
   function renderAll() {
     renderBanner();
@@ -638,14 +742,13 @@
 
   function renderBanner() {
     const el = document.getElementById('daily-banner');
-    // Count days since fixed epoch so it alternates cleanly across month boundaries
-    const epoch = new Date('2026-01-01').getTime();
-    const d = new Date();
+    const epoch    = new Date('2026-01-01').getTime();
+    const d        = new Date();
     const localDay = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
     const dayCount = Math.floor((localDay - epoch) / 86400000);
-    const idx = ((dayCount % 2) + 2) % 2; // always 0 or 1
-    const who = state.data?.people[idx] ?? ['Ruben', 'Ruiming'][idx];
-    const dateStr = d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+    const idx      = ((dayCount % 2) + 2) % 2;
+    const who      = state.data?.people[idx] ?? ['Ruben', 'Ruiming'][idx];
+    const dateStr  = d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
     el.textContent = `${dateStr} — ${who}'s turn to add today's daily problem`;
     el.className   = idx === 0 ? 'ruben' : 'ruiming';
   }
@@ -659,14 +762,18 @@
 
     body.innerHTML = '';
     if (!daily) {
-      body.innerHTML = '<span style="color:var(--gray-400);font-size:.88rem">No daily problem added yet today.</span>';
+      body.innerHTML = '<div style="padding:14px 16px;color:var(--gray-400);font-size:.88rem">No daily problem added yet today.</div>';
       return;
     }
-    body.appendChild(buildCard(daily));
+    const card = buildCard(daily);
+    card.style.borderLeft = 'none';
+    card.style.boxShadow  = 'none';
+    card.style.borderRadius = '0';
+    body.appendChild(card);
   }
 
   function renderList() {
-    const container   = document.getElementById('problem-list');
+    const container = document.getElementById('problem-list');
     container.innerHTML = '';
     if (!state.data) return;
 
@@ -679,33 +786,39 @@
     list.sort((a, b) => {
       if (sortBy === 'date-asc')  return new Date(a.addedAt) - new Date(b.addedAt);
       if (sortBy === 'date-desc') return new Date(b.addedAt) - new Date(a.addedAt);
-      if (sortBy === 'diff-asc')  return (a.difficulty ?? Infinity) - (b.difficulty ?? Infinity);
+      if (sortBy === 'diff-asc')  return (a.difficulty ?? Infinity)  - (b.difficulty ?? Infinity);
       if (sortBy === 'diff-desc') return (b.difficulty ?? -Infinity) - (a.difficulty ?? -Infinity);
       return 0;
     });
 
     if (!list.length) {
-      container.innerHTML = `<div class="empty-state">${unsolved ? 'No unsolved problems!' : 'No problems yet. Add the first one!'}</div>`;
+      container.innerHTML = `<div class="empty-state"><span>${unsolved ? '🎉' : '📭'}</span>${unsolved ? 'All problems solved!' : 'No problems yet. Add the first one!'}</div>`;
       return;
     }
     list.forEach(p => container.appendChild(buildCard(p)));
   }
 
   function buildCard(problem) {
+    const info = diffInfo(problem.difficulty);
+
     const el = document.createElement('div');
-    el.className = ['card', allSolved(problem) ? 'solved-all' : '', problem.isDaily ? 'is-daily' : ''].filter(Boolean).join(' ');
+    el.className = `card ${info.cls} ${problem.isDaily ? 'is-daily' : ''}`.trim();
     el.dataset.id = problem.id;
 
-    // Top row
-    const top = document.createElement('div');
-    top.className = 'card-top';
+    // Inner padding wrapper
+    const inner = document.createElement('div');
+    inner.className = 'card-inner';
 
-    const name = document.createElement('a');
-    name.className = 'card-name';
-    name.textContent = problem.name || 'Untitled';
-    name.href   = problem.link;
-    name.target = '_blank';
-    name.rel    = 'noopener noreferrer';
+    // Title row
+    const titleRow = document.createElement('div');
+    titleRow.className = 'card-title-row';
+
+    const title = document.createElement('a');
+    title.className = 'card-title';
+    title.textContent = problem.name || 'Untitled';
+    title.href   = problem.link;
+    title.target = '_blank';
+    title.rel    = 'noopener noreferrer';
 
     const badges = document.createElement('div');
     badges.className = 'card-badges';
@@ -716,54 +829,62 @@
       b.textContent = 'Daily';
       badges.appendChild(b);
     }
+    if (isCFUrl(problem.link)) {
+      const b = document.createElement('span');
+      b.className = 'badge badge-cf';
+      b.textContent = 'CF';
+      badges.appendChild(b);
+    }
     if (problem.difficulty) {
       const b = document.createElement('span');
-      b.className = `badge badge-diff ${diffClass(problem.difficulty)}`;
-      b.textContent = problem.difficulty;
+      b.className = `badge ${info.badgeCls}`;
+      b.textContent = info.label;
       badges.appendChild(b);
     }
 
-    top.appendChild(name);
-    top.appendChild(badges);
+    titleRow.appendChild(title);
+    titleRow.appendChild(badges);
 
-    // Link
-    const link = document.createElement('a');
-    link.className = 'card-link';
-    link.href   = problem.link;
-    link.target = '_blank';
-    link.rel    = 'noopener noreferrer';
+    // URL
+    const urlEl = document.createElement('a');
+    urlEl.className = 'card-url';
+    urlEl.href   = problem.link;
+    urlEl.target = '_blank';
+    urlEl.rel    = 'noopener noreferrer';
+    urlEl.innerHTML = `<svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L9 1M9 1H4M9 1V6"/></svg> `;
     try {
       const u = new URL(problem.link);
-      link.textContent = u.hostname + u.pathname.replace(/\/$/, '');
-    } catch { link.textContent = problem.link; }
+      urlEl.append(u.hostname + u.pathname.replace(/\/$/, ''));
+    } catch { urlEl.append(problem.link); }
 
-    // Solved buttons
-    const row = document.createElement('div');
-    row.className = 'solved-row';
-    state.data.people.forEach(person => row.appendChild(mkSolveBtn(problem, person)));
+    inner.appendChild(titleRow);
+    inner.appendChild(urlEl);
 
-    // Meta
-    const meta = document.createElement('div');
+    // Solved section
+    const solved = document.createElement('div');
+    solved.className = 'card-solved';
+    state.data.people.forEach(person => solved.appendChild(mkSolveBtn(problem, person)));
+
+    const meta = document.createElement('span');
     meta.className = 'card-meta';
-    meta.textContent = `Added ${new Date(problem.addedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}`;
+    meta.textContent = new Date(problem.addedAt).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+    solved.appendChild(meta);
 
-    el.appendChild(top);
-    el.appendChild(link);
-    el.appendChild(row);
-    el.appendChild(meta);
+    el.appendChild(inner);
+    el.appendChild(solved);
     return el;
   }
 
   function mkSolveBtn(problem, person) {
-    const solved = problem.solved?.[person] === true;
+    const isSolved = problem.solved?.[person] === true;
     const btn = document.createElement('button');
-    btn.className = 'solve-btn' + (solved ? ' on' : '');
+    btn.className = 'solve-btn' + (isSolved ? ' on' : '');
     btn.dataset.problemId = problem.id;
     btn.dataset.person    = person;
 
     const chk = document.createElement('span');
     chk.className = 'chk';
-    chk.innerHTML = `<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,7 5.5,10.5 12,3.5"/></svg>`;
+    chk.innerHTML = `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="2.5,8 6.5,12 13.5,4"/></svg>`;
 
     btn.appendChild(chk);
     btn.append(person);
@@ -771,29 +892,62 @@
     return btn;
   }
 
-  // ── Particles ──────────────────────────────────────────────────────────────
+  // ── Physics confetti ─────────────────────────────────────────────
 
   function burst(el) {
     const r  = el.getBoundingClientRect();
     const cx = r.left + r.width  / 2;
     const cy = r.top  + r.height / 2;
-    const colors = ['#22c55e','#16a34a','#4ade80','#86efac','#2563eb','#60a5fa'];
-    for (let i = 0; i < 12; i++) {
-      const p = document.createElement('div');
+
+    const colors  = ['#f43f5e','#fb923c','#fbbf24','#4ade80','#34d399','#60a5fa','#818cf8','#c084fc','#f472b6'];
+    const count   = 22;
+
+    for (let i = 0; i < count; i++) {
+      const p    = document.createElement('div');
       p.className = 'pt';
-      const sz = 4 + Math.random() * 5;
-      p.style.cssText = `width:${sz}px;height:${sz}px;background:${colors[i % colors.length]};left:${cx}px;top:${cy}px;transform:translate(-50%,-50%)`;
+
+      const color   = colors[i % colors.length];
+      const size    = 5 + Math.random() * 6;
+      const isRect  = Math.random() > 0.5;
+
+      p.style.cssText = `
+        width:${size}px; height:${isRect ? size * 0.5 : size}px;
+        background:${color};
+        border-radius:${isRect ? '2px' : '50%'};
+        left:${cx}px; top:${cy}px;
+        transform:translate(-50%,-50%);
+      `;
       document.body.appendChild(p);
-      const a  = (i / 12) * Math.PI * 2 + Math.random() * 0.5;
-      const d  = 28 + Math.random() * 38;
-      p.animate([
-        { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 },
-        { transform: `translate(calc(-50% + ${Math.cos(a)*d}px),calc(-50% + ${Math.sin(a)*d - 8}px)) scale(0)`, opacity: 0 }
-      ], { duration: 520, easing: 'ease-out', fill: 'forwards' }).onfinish = () => p.remove();
+
+      // Physics initial state
+      const angle  = (i / count) * Math.PI * 2 + (Math.random() - 0.5) * 0.6;
+      const speed  = 4 + Math.random() * 7;
+      let   vx     = Math.cos(angle) * speed;
+      let   vy     = Math.sin(angle) * speed - 4; // upward kick
+      let   x = 0, y = 0, rot = Math.random() * 360;
+      const rotV   = (Math.random() - 0.5) * 18;
+      const gravity = 0.28;
+      let   opacity = 1;
+
+      function tick() {
+        vx  *= 0.97;
+        vy  += gravity;
+        x   += vx;
+        y   += vy;
+        rot += rotV;
+        opacity -= 0.022;
+
+        p.style.transform  = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) rotate(${rot}deg)`;
+        p.style.opacity    = Math.max(opacity, 0);
+
+        if (opacity > 0) requestAnimationFrame(tick);
+        else p.remove();
+      }
+      requestAnimationFrame(tick);
     }
   }
 
-  // ── Event handlers ─────────────────────────────────────────────────────────
+  // ── Event handlers ───────────────────────────────────────────────
 
   function onSolve(e) {
     const btn     = e.currentTarget;
@@ -812,9 +966,10 @@
 
     if (nowOn) burst(btn);
 
-    // Update border on all matching cards
     document.querySelectorAll(`.card[data-id="${problemId}"]`).forEach(c => {
-      c.classList.toggle('solved-all', allSolved(problem));
+      const info = diffInfo(problem.difficulty);
+      // Re-apply diff class
+      c.className = `card ${info.cls} ${problem.isDaily ? 'is-daily' : ''}`.trim();
     });
 
     if (document.getElementById('filter-unsolved').checked && allSolved(problem)) renderList();
@@ -840,15 +995,13 @@
       return;
     }
 
-    // Track which URL triggered this fetch so stale results are ignored
     state.pendingUrl = url;
-
-    fs.textContent = cfCache ? 'Looking up…' : 'Fetching problem list (first time only)…';
+    fs.textContent = cfCache ? 'Looking up…' : 'Fetching problem list (first time, ~2s)…';
     fs.className   = 'fetch-status loading';
 
     try {
       const info = await fetchCF(cf.contestId, cf.index);
-      if (state.pendingUrl !== url) return; // URL changed while fetching
+      if (state.pendingUrl !== url) return;
       document.getElementById('cf-name').value = info.name;
       document.getElementById('cf-diff').value = info.difficulty ?? '';
       cfFields.classList.add('on');
@@ -870,23 +1023,16 @@
 
     const cfOn  = document.getElementById('cf-fields').classList.contains('on');
     const manOn = document.getElementById('manual-fields').classList.contains('on');
+    if (!cfOn && !manOn) { alert('Please wait for problem info to load.'); return; }
 
-    if (!cfOn && !manOn) {
-      alert('Please wait for problem info to load or enter a valid URL.');
-      return;
-    }
-
-    const name = cfOn
-      ? document.getElementById('cf-name').value.trim()
-      : document.getElementById('m-name').value.trim();
-    const rawDiff = cfOn
-      ? document.getElementById('cf-diff').value
-      : document.getElementById('m-diff').value;
+    const name     = cfOn ? document.getElementById('cf-name').value.trim()
+                           : document.getElementById('m-name').value.trim();
+    const rawDiff  = cfOn ? document.getElementById('cf-diff').value
+                           : document.getElementById('m-diff').value;
     const difficulty = rawDiff ? parseInt(rawDiff, 10) : null;
+    const isDaily    = document.getElementById('form-daily').checked;
 
-    const isDaily = document.getElementById('form-daily').checked;
-
-    const problem = {
+    state.data.problems.push({
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
       link: url,
       name: name || 'Untitled',
@@ -895,9 +1041,8 @@
       isDaily,
       dailyDate: isDaily ? today() : null,
       solved: Object.fromEntries(state.data.people.map(p => [p, false])),
-    };
+    });
 
-    state.data.problems.push(problem);
     state.dirty = true;
     resetForm();
     renderAll();
@@ -967,7 +1112,7 @@
     });
   }
 
-  // ── Init ───────────────────────────────────────────────────────────────────
+  // ── Init ─────────────────────────────────────────────────────────
 
   async function init() {
     loadStorage();
