@@ -625,12 +625,17 @@
   }
 
   function renderBanner() {
-    const el  = document.getElementById('daily-banner');
-    const day = new Date().getDate();
-    const odd = day % 2 === 1;
-    const who = state.data?.people[odd ? 0 : 1] ?? (odd ? 'Ruben' : 'Ruiming');
-    el.textContent = `Day ${day} — ${who}'s turn to add today's daily problem`;
-    el.className   = odd ? 'ruben' : 'ruiming';
+    const el = document.getElementById('daily-banner');
+    // Count days since fixed epoch so it alternates cleanly across month boundaries
+    const epoch = new Date('2026-01-01').getTime();
+    const d = new Date();
+    const localDay = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+    const dayCount = Math.floor((localDay - epoch) / 86400000);
+    const idx = ((dayCount % 2) + 2) % 2; // always 0 or 1
+    const who = state.data?.people[idx] ?? ['Ruben', 'Ruiming'][idx];
+    const dateStr = d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+    el.textContent = `${dateStr} — ${who}'s turn to add today's daily problem`;
+    el.className   = idx === 0 ? 'ruben' : 'ruiming';
   }
 
   function renderDaily() {
