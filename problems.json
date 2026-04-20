@@ -744,6 +744,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1776690123378-n73vv",
+      "link": "https://codeforces.com/problemset/problem/2217/F",
+      "name": "Interval Game",
+      "difficulty": 2300,
+      "addedAt": "2026-04-20T13:02:03.378Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-20",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
