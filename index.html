@@ -787,7 +787,7 @@
   const allSolved = p => state.data.people.every(n => p.solved?.[n] === true);
 
   function markDirty() {
-    markDirty();
+    state.dirty = true;
     document.getElementById('btn-save').classList.add('dirty');
     setStatus('Unsaved changes');
   }
