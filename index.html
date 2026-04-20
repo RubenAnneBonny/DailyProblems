@@ -116,7 +116,21 @@
 
     #btn-add      { background: var(--blue); color: white; }
     #btn-sync     { background: var(--gray-100); color: var(--gray-700); border: 1px solid var(--gray-200); }
-    #btn-save     { background: var(--green); color: white; }
+    #btn-save     { background: var(--green); color: white; position: relative; }
+    #btn-save.dirty::after {
+      content: '';
+      position: absolute;
+      top: -3px; right: -3px;
+      width: 9px; height: 9px;
+      background: #fbbf24;
+      border-radius: 50%;
+      border: 2px solid var(--gray-50);
+      animation: pulse-dot 1.6s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50%       { transform: scale(1.3); opacity: 0.7; }
+    }
     #btn-settings { background: white; color: var(--gray-600); border: 1px solid var(--gray-200); }
 
     #sync-status {
@@ -761,7 +775,7 @@
       const result = await res.json();
       state.sha = result.content.sha;
       localStorage.setItem('dp_sha', state.sha);
-      state.dirty = false;
+      markClean();
       setStatus('Saved ✓');
     } catch (e) { setStatus('Save failed: ' + e.message, true); }
     finally { document.getElementById('btn-save').disabled = false; }
@@ -771,6 +785,16 @@
 
   const today     = () => new Date().toISOString().slice(0, 10);
   const allSolved = p => state.data.people.every(n => p.solved?.[n] === true);
+
+  function markDirty() {
+    markDirty();
+    document.getElementById('btn-save').classList.add('dirty');
+    setStatus('Unsaved changes');
+  }
+  function markClean() {
+    state.dirty = false;
+    document.getElementById('btn-save').classList.remove('dirty');
+  }
 
   function diffInfo(d) {
     if (!d)       return { cls: '',         badgeCls: 'badge-diff',   label: '?' };
@@ -1033,7 +1057,7 @@
     if (!pendingDeleteId) return;
     state.data.problems = state.data.problems.filter(p => p.id !== pendingDeleteId);
     pendingDeleteId = null;
-    state.dirty = true;
+    markDirty();
     document.getElementById('confirm-overlay').classList.add('hidden');
     renderAll();
   }
@@ -1047,7 +1071,7 @@
     if (!problem.solved) problem.solved = {};
     const nowOn = !problem.solved[person];
     problem.solved[person] = nowOn;
-    state.dirty = true;
+    markDirty();
 
     btn.classList.toggle('on', nowOn);
     btn.classList.add('popping');
@@ -1132,7 +1156,7 @@
       solved: Object.fromEntries(state.data.people.map(p => [p, false])),
     });
 
-    state.dirty = true;
+    markDirty();
     resetForm();
     renderAll();
   }
