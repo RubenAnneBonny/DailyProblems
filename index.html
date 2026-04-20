@@ -1085,7 +1085,11 @@
       c.className = `card ${info.cls} ${problem.isDaily ? 'is-daily' : ''}`.trim();
     });
 
-    if (problem.isDaily && problem.dailyDate === today()) renderDaily();
+    // Sync the same button in any other rendered copy of this card (e.g. daily ↔ list)
+    document.querySelectorAll(`.solve-btn[data-problem-id="${problemId}"][data-person="${person}"]`).forEach(b => {
+      if (b !== btn) b.classList.toggle('on', nowOn);
+    });
+
     if (document.getElementById('filter-unsolved').checked && person === state.currentUser && nowOn) renderList();
   }
 
