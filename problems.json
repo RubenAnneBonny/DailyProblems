@@ -741,7 +741,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     },
@@ -754,7 +754,7 @@
       "isDaily": true,
       "dailyDate": "2026-04-20",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     }
