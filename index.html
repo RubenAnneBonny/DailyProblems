@@ -841,7 +841,7 @@
     const sortBy   = document.getElementById('sort-by').value;
 
     let list = [...state.data.problems];
-    if (unsolved) list = list.filter(p => !allSolved(p));
+    if (unsolved) list = list.filter(p => p.solved?.[state.currentUser] !== true);
 
     list.sort((a, b) => {
       if (sortBy === 'date-asc')  return new Date(a.addedAt) - new Date(b.addedAt);
@@ -852,7 +852,8 @@
     });
 
     if (!list.length) {
-      container.innerHTML = `<div class="empty-state"><span>${unsolved ? '🎉' : '📭'}</span>${unsolved ? 'All problems solved!' : 'No problems yet. Add the first one!'}</div>`;
+      const who = state.currentUser || 'you';
+      container.innerHTML = `<div class="empty-state"><span>${unsolved ? '🎉' : '📭'}</span>${unsolved ? `All caught up, ${who}!` : 'No problems yet. Add the first one!'}</div>`;
       return;
     }
     list.forEach(p => container.appendChild(buildCard(p)));
@@ -1060,7 +1061,7 @@
       c.className = `card ${info.cls} ${problem.isDaily ? 'is-daily' : ''}`.trim();
     });
 
-    if (document.getElementById('filter-unsolved').checked && allSolved(problem)) renderList();
+    if (document.getElementById('filter-unsolved').checked && person === state.currentUser && nowOn) renderList();
   }
 
   async function onUrlInput() {
