@@ -1085,6 +1085,7 @@
       c.className = `card ${info.cls} ${problem.isDaily ? 'is-daily' : ''}`.trim();
     });
 
+    if (problem.isDaily && problem.dailyDate === today()) renderDaily();
     if (document.getElementById('filter-unsolved').checked && person === state.currentUser && nowOn) renderList();
   }
 
