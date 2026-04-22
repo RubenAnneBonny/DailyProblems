@@ -29,14 +29,6 @@
       --shadow:       0 1px 4px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.06);
       --shadow-md:    0 4px 16px rgba(0,0,0,0.1);
 
-      /* Difficulty colours */
-      --diff-newbie:   #94a3b8;
-      --diff-easy:     #22c55e;
-      --diff-medium:   #eab308;
-      --diff-hard:     #f97316;
-      --diff-harder:   #ef4444;
-      --diff-expert:   #a855f7;
-      --diff-master:   #ec4899;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -277,14 +269,6 @@
     .card:hover { box-shadow: var(--shadow-md); }
     .card.is-daily { outline: 1.5px solid var(--blue); outline-offset: 0; }
 
-    /* difficulty left border colours */
-    .card.d-newbie  { border-left-color: var(--diff-newbie); }
-    .card.d-easy    { border-left-color: var(--diff-easy); }
-    .card.d-medium  { border-left-color: var(--diff-medium); }
-    .card.d-hard    { border-left-color: var(--diff-hard); }
-    .card.d-harder  { border-left-color: var(--diff-harder); }
-    .card.d-expert  { border-left-color: var(--diff-expert); }
-    .card.d-master  { border-left-color: var(--diff-master); }
 
     .card-inner { padding: 14px 16px 0; }
 
@@ -322,13 +306,6 @@
     .badge-cf     { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
     .badge-diff   { background: var(--gray-100); color: var(--gray-600); }
 
-    .badge-newbie { background: #f1f5f9; color: #475569; }
-    .badge-easy   { background: #dcfce7; color: #15803d; }
-    .badge-medium { background: #fef9c3; color: #92400e; }
-    .badge-hard   { background: #ffedd5; color: #9a3412; }
-    .badge-harder { background: #fee2e2; color: #991b1b; }
-    .badge-expert { background: #f3e8ff; color: #7e22ce; }
-    .badge-master { background: #fce7f3; color: #9d174d; }
 
     /* URL line */
     .card-url {
@@ -797,14 +774,46 @@
   }
 
   function diffInfo(d) {
-    if (!d)       return { cls: '',         badgeCls: 'badge-diff',   label: '?' };
-    if (d < 1200) return { cls: 'd-newbie', badgeCls: 'badge-newbie', label: d };
-    if (d < 1400) return { cls: 'd-easy',   badgeCls: 'badge-easy',   label: d };
-    if (d < 1800) return { cls: 'd-medium', badgeCls: 'badge-medium', label: d };
-    if (d < 2100) return { cls: 'd-hard',   badgeCls: 'badge-hard',   label: d };
-    if (d < 2400) return { cls: 'd-harder', badgeCls: 'badge-harder', label: d };
-    if (d < 2800) return { cls: 'd-expert', badgeCls: 'badge-expert', label: d };
-    return         { cls: 'd-master', badgeCls: 'badge-master', label: d };
+    if (!d) return { color: null, bgColor: null, label: '?' };
+    // Color anchors: [difficulty, [r, g, b]]
+    const anchors = [
+      [ 800, [148, 163, 184]],  // slate gray
+      [1200, [ 34, 197,  94]],  // green
+      [1400, [  6, 182, 212]],  // cyan
+      [1600, [ 59, 130, 246]],  // blue
+      [1800, [139,  92, 246]],  // violet
+      [2000, [236,  72, 153]],  // pink
+      [2100, [249, 115,  22]],  // orange
+      [2400, [239,  68,  68]],  // red
+      [2800, [127,  29,  29]],  // dark red
+      [3500, [ 30,  10,  10]],  // near black
+    ];
+    const snapped = Math.round(d / 100) * 100;
+    let rgb;
+    if (snapped <= anchors[0][0]) {
+      rgb = anchors[0][1];
+    } else if (snapped >= anchors[anchors.length - 1][0]) {
+      rgb = anchors[anchors.length - 1][1];
+    } else {
+      for (let i = 0; i < anchors.length - 1; i++) {
+        const [d1, c1] = anchors[i];
+        const [d2, c2] = anchors[i + 1];
+        if (snapped <= d2) {
+          const t = (snapped - d1) / (d2 - d1);
+          rgb = [
+            Math.round(c1[0] + t * (c2[0] - c1[0])),
+            Math.round(c1[1] + t * (c2[1] - c1[1])),
+            Math.round(c1[2] + t * (c2[2] - c1[2])),
+          ];
+          break;
+        }
+      }
+    }
+    return {
+      color:   `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`,
+      bgColor: `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.12)`,
+      label:   d,
+    };
   }
 
   function isCFUrl(url) { return /codeforces\.com/.test(url); }
@@ -887,7 +896,8 @@
     const info = diffInfo(problem.difficulty);
 
     const el = document.createElement('div');
-    el.className = `card ${info.cls} ${problem.isDaily ? 'is-daily' : ''}`.trim();
+    el.className = `card ${problem.isDaily ? 'is-daily' : ''}`.trim();
+    if (info.color) el.style.borderLeftColor = info.color;
     el.dataset.id = problem.id;
 
     // Inner padding wrapper
@@ -922,7 +932,8 @@
     }
     if (problem.difficulty) {
       const b = document.createElement('span');
-      b.className = `badge ${info.badgeCls}`;
+      b.className = 'badge';
+      if (info.color) { b.style.background = info.bgColor; b.style.color = info.color; }
       b.textContent = info.label;
       badges.appendChild(b);
     }
