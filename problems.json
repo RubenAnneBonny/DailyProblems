@@ -66,7 +66,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -534,7 +534,7 @@
       "dailyDate": null,
       "solved": {
         "Ruben": true,
-        "Ruiming": false
+        "Ruiming": true
       }
     },
     {
@@ -598,7 +598,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     },
@@ -637,7 +637,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
@@ -741,8 +741,8 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
-        "Ruiming": false
+        "Ruben": true,
+        "Ruiming": true
       }
     },
     {
@@ -755,7 +755,33 @@
       "dailyDate": "2026-04-20",
       "solved": {
         "Ruben": false,
-        "Ruiming": false
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776755188774-lnwdw",
+      "link": "https://codeforces.com/problemset/problem/2218/G",
+      "name": "The 67th Iteration of \"Counting is Fun\"",
+      "difficulty": 1800,
+      "addedAt": "2026-04-21T07:06:28.774Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-21",
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
+      }
+    },
+    {
+      "id": "1776837691342-ur2rc",
+      "link": "https://codeforces.com/problemset/problem/1941/G",
+      "name": "Rudolf and Subway",
+      "difficulty": 2000,
+      "addedAt": "2026-04-22T06:01:31.342Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-22",
+      "solved": {
+        "Ruben": true,
+        "Ruiming": true
       }
     }
   ]
