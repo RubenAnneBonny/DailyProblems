@@ -783,6 +783,19 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1776926299485-cngx2",
+      "link": "https://codeforces.com/problemset/problem/2180/C",
+      "name": "XOR-factorization",
+      "difficulty": 1900,
+      "addedAt": "2026-04-23T06:38:19.485Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-23",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
