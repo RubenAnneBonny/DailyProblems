@@ -796,6 +796,19 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1777028202993-q7za0",
+      "link": "https://codeforces.com/problemset/problem/1726/D",
+      "name": "Edge Split",
+      "difficulty": 2000,
+      "addedAt": "2026-04-24T10:56:42.993Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-24",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
