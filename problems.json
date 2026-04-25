@@ -809,6 +809,19 @@
         "Ruben": true,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777099847008-2vhy4",
+      "link": "https://codeforces.com/problemset/problem/2201/C",
+      "name": "Rigged Bracket Sequence",
+      "difficulty": 2000,
+      "addedAt": "2026-04-25T06:50:47.008Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-25",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
