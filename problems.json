@@ -819,7 +819,7 @@
       "isDaily": true,
       "dailyDate": "2026-04-25",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     }
