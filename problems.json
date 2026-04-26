@@ -822,6 +822,19 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1777197758252-nrh2x",
+      "link": "https://codeforces.com/problemset/problem/2184/G",
+      "name": "Nastiness of Segments",
+      "difficulty": 1900,
+      "addedAt": "2026-04-26T10:02:38.252Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-26",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
