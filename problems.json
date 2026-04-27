@@ -835,6 +835,19 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1777276721565-usy0o",
+      "link": "https://codeforces.com/problemset/problem/2210/C2",
+      "name": "A Simple GCD Problem (Hard Version)",
+      "difficulty": 2100,
+      "addedAt": "2026-04-27T07:58:41.565Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-27",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
