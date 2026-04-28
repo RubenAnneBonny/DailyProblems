@@ -850,13 +850,13 @@
       }
     },
     {
-      "id": "1777376809696-x0pk0",
+      "id": "1777380401442-r1llp",
       "link": "https://codeforces.com/problemset/problem/2165/C",
       "name": "Binary Wine",
       "difficulty": 2000,
-      "addedAt": "2026-04-28T11:46:49.696Z",
-      "isDaily": false,
-      "dailyDate": null,
+      "addedAt": "2026-04-28T12:46:41.442Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-28",
       "solved": {
         "Ruben": false,
         "Ruiming": false
