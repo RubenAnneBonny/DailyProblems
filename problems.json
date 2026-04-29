@@ -861,6 +861,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777452854182-2obf1",
+      "link": "https://codeforces.com/problemset/problem/2170/E",
+      "name": "Binary Strings and Blocks",
+      "difficulty": 2100,
+      "addedAt": "2026-04-29T08:54:14.182Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-29",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
