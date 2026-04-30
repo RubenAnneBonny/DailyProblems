@@ -874,6 +874,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777553399208-fkg87",
+      "link": "https://codeforces.com/problemset/problem/2085/D",
+      "name": "Serval and Kaitenzushi Buffet",
+      "difficulty": 2000,
+      "addedAt": "2026-04-30T12:49:59.208Z",
+      "isDaily": true,
+      "dailyDate": "2026-04-30",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
