@@ -887,6 +887,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777620675120-v5o5x",
+      "link": "https://codeforces.com/contest/1665/problem/D",
+      "name": "GCD Guess",
+      "difficulty": 2000,
+      "addedAt": "2026-05-01T07:31:15.120Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-01",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
