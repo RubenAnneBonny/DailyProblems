@@ -900,6 +900,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777727284697-ou46s",
+      "link": "https://codeforces.com/problemset/problem/34/E",
+      "name": "Collisions",
+      "difficulty": 2000,
+      "addedAt": "2026-05-02T13:08:04.697Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-02",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
