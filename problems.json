@@ -913,6 +913,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777791944404-5y05l",
+      "link": "https://codeforces.com/problemset/problem/2194/E",
+      "name": "The Turtle Strikes Back",
+      "difficulty": 2000,
+      "addedAt": "2026-05-03T07:05:44.404Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-03",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
