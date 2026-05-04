@@ -952,6 +952,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777888834252-ldsji",
+      "link": "https://lthchallenge26.kattis.com/contests/yzom6x/problems/bumpthemnumbers",
+      "name": "Bump Them Numbers",
+      "difficulty": 1900,
+      "addedAt": "2026-05-04T10:00:34.252Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
