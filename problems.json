@@ -965,6 +965,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1777888879381-96hyn",
+      "link": "https://lthchallenge26.kattis.com/contests/yzom6x/problems/lostfrog",
+      "name": "Lost Frog",
+      "difficulty": 1700,
+      "addedAt": "2026-05-04T10:01:19.381Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": true
+      }
     }
   ]
 }
