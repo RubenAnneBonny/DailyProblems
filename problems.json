@@ -978,6 +978,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1777896199258-9ybjt",
+      "link": "https://lthchallenge26.kattis.com/contests/yzom6x/problems/walktoschool",
+      "name": "Walk to School",
+      "difficulty": 1800,
+      "addedAt": "2026-05-04T12:03:19.258Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": true,
+        "Ruiming": false
+      }
     }
   ]
 }
