@@ -978,6 +978,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1777965887576-hk0ej",
+      "link": "https://codeforces.com/problemset/problem/2187/C",
+      "name": "Jerry and Tom",
+      "difficulty": 2300,
+      "addedAt": "2026-05-05T07:24:47.576Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-05",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
