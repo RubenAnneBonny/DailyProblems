@@ -991,6 +991,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778060445263-f9yue",
+      "link": "https://po2punkt0.kattis.com/problems/whispers",
+      "name": "Amazing Whispers",
+      "difficulty": 2000,
+      "addedAt": "2026-05-06T09:40:45.263Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-06",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
