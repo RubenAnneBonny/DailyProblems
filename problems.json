@@ -945,7 +945,7 @@
       "id": "1777888768748-trnrx",
       "link": "https://lthchallenge26.kattis.com/contests/yzom6x/problems/spinception",
       "name": "Spinception",
-      "difficulty": 6.0,
+      "difficulty": 6,
       "platform": "kattis",
       "addedAt": "2026-05-04T09:59:28.748Z",
       "isDaily": true,
@@ -1000,7 +1000,7 @@
       "id": "1778060445263-f9yue",
       "link": "https://po2punkt0.kattis.com/problems/whispers",
       "name": "Amazing Whispers",
-      "difficulty": 7.0,
+      "difficulty": 7,
       "platform": "kattis",
       "addedAt": "2026-05-06T09:40:45.263Z",
       "isDaily": true,
@@ -1009,6 +1009,20 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778079379762-t8vsa",
+      "link": "https://po2punkt0.kattis.com/problems/byggaplank",
+      "name": "Fence Building",
+      "difficulty": 7.1,
+      "addedAt": "2026-05-06T14:56:19.762Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      },
+      "platform": "kattis"
     }
   ]
 }
