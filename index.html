@@ -820,9 +820,9 @@
   function isCFUrl(url)     { return /codeforces\.com/.test(url); }
   function isKattisUrl(url) { return /kattis\.com/.test(url); }
 
-  // Map Kattis 1.0–10.0 linearly to CF color-score range 800–3500
+  // Map Kattis difficulty to CF color-score: 1.0→800, 7.0→2000, 10.0→2600
   function kattisToColorScore(k) {
-    return Math.round((800 + (k - 1) / 9 * 2700) / 100) * 100;
+    return Math.round((600 + k * 200) / 100) * 100;
   }
 
   // Wrapper that resolves the right color score and label for both platforms
