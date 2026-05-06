@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\ruben\\\\Github\\\\DailyProblems\" -Recurse -Force)",
+      "Bash(Select-Object -First 50)",
+      "WebSearch",
+      "WebFetch(domain:po2punkt0.kattis.com)",
+      "WebFetch(domain:open.kattis.com)"
+    ]
+  }
+}

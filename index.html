@@ -304,6 +304,7 @@
     }
     .badge-daily  { background: var(--blue-light); color: var(--blue-dark); }
     .badge-cf     { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+    .badge-kattis { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
     .badge-diff   { background: var(--gray-100); color: var(--gray-600); }
 
 
@@ -816,7 +817,31 @@
     };
   }
 
-  function isCFUrl(url) { return /codeforces\.com/.test(url); }
+  function isCFUrl(url)     { return /codeforces\.com/.test(url); }
+  function isKattisUrl(url) { return /kattis\.com/.test(url); }
+
+  // Map Kattis 1.0–10.0 linearly to CF color-score range 800–3500
+  function kattisToColorScore(k) {
+    return Math.round((800 + (k - 1) / 9 * 2700) / 100) * 100;
+  }
+
+  // Wrapper that resolves the right color score and label for both platforms
+  function problemDiffInfo(problem) {
+    const d = problem.difficulty;
+    if (!d) return { color: null, bgColor: null, label: '?' };
+    if (problem.platform === 'kattis') {
+      const info = diffInfo(kattisToColorScore(d));
+      info.label = Number.isInteger(d) ? d.toFixed(1) : String(d);
+      return info;
+    }
+    return diffInfo(d);
+  }
+
+  // diffSortKey maps any problem to a unified CF-scale number for difficulty sorting
+  function diffSortKey(p) {
+    if (p.difficulty == null) return null;
+    return p.platform === 'kattis' ? kattisToColorScore(p.difficulty) : p.difficulty;
+  }
 
   function setStatus(msg, isErr = false) {
     const el = document.getElementById('sync-status');
@@ -879,8 +904,14 @@
     list.sort((a, b) => {
       if (sortBy === 'date-asc')  return new Date(a.addedAt) - new Date(b.addedAt);
       if (sortBy === 'date-desc') return new Date(b.addedAt) - new Date(a.addedAt);
-      if (sortBy === 'diff-asc')  return (a.difficulty ?? Infinity)  - (b.difficulty ?? Infinity);
-      if (sortBy === 'diff-desc') return (b.difficulty ?? -Infinity) - (a.difficulty ?? -Infinity);
+      if (sortBy === 'diff-asc') {
+        const da = diffSortKey(a) ?? Infinity, db = diffSortKey(b) ?? Infinity;
+        return da !== db ? da - db : new Date(b.addedAt) - new Date(a.addedAt);
+      }
+      if (sortBy === 'diff-desc') {
+        const da = diffSortKey(a) ?? -Infinity, db = diffSortKey(b) ?? -Infinity;
+        return da !== db ? db - da : new Date(b.addedAt) - new Date(a.addedAt);
+      }
       return 0;
     });
 
@@ -893,7 +924,7 @@
   }
 
   function buildCard(problem) {
-    const info = diffInfo(problem.difficulty);
+    const info = problemDiffInfo(problem);
 
     const el = document.createElement('div');
     el.className = `card ${problem.isDaily ? 'is-daily' : ''}`.trim();
@@ -928,6 +959,11 @@
       const b = document.createElement('span');
       b.className = 'badge badge-cf';
       b.textContent = 'CF';
+      badges.appendChild(b);
+    } else if (isKattisUrl(problem.link)) {
+      const b = document.createElement('span');
+      b.className = 'badge badge-kattis';
+      b.textContent = 'Kattis';
       badges.appendChild(b);
     }
     if (problem.difficulty) {
@@ -1091,7 +1127,7 @@
     if (nowOn) burst(btn);
 
     document.querySelectorAll(`.card[data-id="${problemId}"]`).forEach(c => {
-      const info = diffInfo(problem.difficulty);
+      const info = problemDiffInfo(problem);
       // Re-apply diff class
       c.className = `card ${info.cls} ${problem.isDaily ? 'is-daily' : ''}`.trim();
     });
@@ -1120,6 +1156,12 @@
 
     const cf = parseCF(url);
     if (!cf) {
+      if (isKattisUrl(url)) {
+        document.getElementById('manual-note').textContent =
+          'Kattis problem — enter name and difficulty (Kattis scale: 1.0–10.0).';
+      } else {
+        document.getElementById('manual-note').textContent = 'Not a Codeforces URL — enter details manually.';
+      }
       manFields.classList.add('on');
       return;
     }
@@ -1158,10 +1200,11 @@
                            : document.getElementById('m-name').value.trim();
     const rawDiff  = cfOn ? document.getElementById('cf-diff').value
                            : document.getElementById('m-diff').value;
-    const difficulty = rawDiff ? parseInt(rawDiff, 10) : null;
+    const isKattis   = isKattisUrl(url);
+    const difficulty = rawDiff ? (isKattis ? parseFloat(rawDiff) : parseInt(rawDiff, 10)) : null;
     const isDaily    = document.getElementById('form-daily').checked;
 
-    state.data.problems.push({
+    const entry = {
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
       link: url,
       name: name || 'Untitled',
@@ -1170,7 +1213,9 @@
       isDaily,
       dailyDate: isDaily ? today() : null,
       solved: Object.fromEntries(state.data.people.map(p => [p, false])),
-    });
+    };
+    if (isKattis) entry.platform = 'kattis';
+    state.data.problems.push(entry);
 
     markDirty();
     resetForm();
