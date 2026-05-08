@@ -1036,6 +1036,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778245819309-om3wm",
+      "link": "https://codeforces.com/problemset/problem/48/E",
+      "name": "Ivan the Fool VS Gorynych the Dragon",
+      "difficulty": 2100,
+      "addedAt": "2026-05-08T13:10:19.309Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-08",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
