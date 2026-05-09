@@ -1062,6 +1062,20 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778343089648-if7i3",
+      "link": "https://kthchallenge26.kattis.com/contests/kthchallenge26/problems/permutationwindows",
+      "name": "permutationwindows",
+      "difficulty": 1800,
+      "addedAt": "2026-05-09T16:11:29.648Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      },
+      "platform": "kattis"
     }
   ]
 }
