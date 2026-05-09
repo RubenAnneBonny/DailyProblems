@@ -1049,6 +1049,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778320604181-ac6gb",
+      "link": "https://codeforces.com/problemset/problem/2209/D",
+      "name": "Ghostfires",
+      "difficulty": 1800,
+      "addedAt": "2026-05-09T09:56:44.181Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-09",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
