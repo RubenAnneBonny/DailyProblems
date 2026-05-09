@@ -1076,6 +1076,20 @@
         "Ruiming": false
       },
       "platform": "kattis"
+    },
+    {
+      "id": "1778343192630-mblq5",
+      "link": "https://kthchallenge26.kattis.com/contests/kthchallenge26/problems/kthresholdjunction",
+      "name": "Untitled",
+      "difficulty": 7,
+      "addedAt": "2026-05-09T16:13:12.630Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      },
+      "platform": "kattis"
     }
   ]
 }
