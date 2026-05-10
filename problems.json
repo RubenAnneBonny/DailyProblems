@@ -1090,6 +1090,19 @@
         "Ruiming": false
       },
       "platform": "kattis"
+    },
+    {
+      "id": "1778436414316-4qq0s",
+      "link": "https://codeforces.com/problemset/problem/2181/D",
+      "name": "Doorway",
+      "difficulty": 2000,
+      "addedAt": "2026-05-10T18:06:54.316Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-10",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
