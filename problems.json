@@ -1059,7 +1059,7 @@
       "isDaily": true,
       "dailyDate": "2026-05-09",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     },
