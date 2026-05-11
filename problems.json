@@ -429,7 +429,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
