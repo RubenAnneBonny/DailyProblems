@@ -1103,6 +1103,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778480780135-iv9pb",
+      "link": "https://codeforces.com/contest/2215/problem/B",
+      "name": "RReeppeettiittiioonn",
+      "difficulty": 2000,
+      "addedAt": "2026-05-11T06:26:20.135Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-11",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
