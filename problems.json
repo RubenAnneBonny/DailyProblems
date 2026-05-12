@@ -1116,6 +1116,20 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778607982983-1p2mi",
+      "link": "https://po2punkt0.kattis.com/problems/backrooms",
+      "name": "Backrooms",
+      "difficulty": 7.2,
+      "addedAt": "2026-05-12T17:46:22.983Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-12",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      },
+      "platform": "kattis"
     }
   ]
 }
