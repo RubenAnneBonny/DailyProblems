@@ -1130,6 +1130,19 @@
         "Ruiming": false
       },
       "platform": "kattis"
+    },
+    {
+      "id": "1778662507900-sjp0g",
+      "link": "https://codeforces.com/problemset/problem/2178/E",
+      "name": "Flatten or Concatenate",
+      "difficulty": 2000,
+      "addedAt": "2026-05-13T08:55:07.900Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-13",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
