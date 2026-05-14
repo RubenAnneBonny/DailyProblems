@@ -1140,7 +1140,7 @@
       "isDaily": true,
       "dailyDate": "2026-05-13",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     }
