@@ -1143,6 +1143,19 @@
         "Ruben": true,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778767786116-bxf8m",
+      "link": "https://codeforces.com/problemset/problem/2131/G",
+      "name": "Wafu!",
+      "difficulty": 2000,
+      "addedAt": "2026-05-14T14:09:46.116Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-14",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
