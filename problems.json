@@ -1156,6 +1156,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1778878018652-7e8ef",
+      "link": "https://codeforces.com/problemset/problem/2092/E",
+      "name": "She knows...",
+      "difficulty": 2100,
+      "addedAt": "2026-05-15T20:46:58.652Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-15",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
