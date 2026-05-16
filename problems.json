@@ -1169,6 +1169,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1778924682707-5652d",
+      "link": "https://codeforces.com/problemset/problem/1657/E",
+      "name": "Star MST",
+      "difficulty": 2200,
+      "addedAt": "2026-05-16T09:44:42.707Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-16",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
