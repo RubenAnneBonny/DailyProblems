@@ -1182,6 +1182,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779044303073-5cxa1",
+      "link": "https://codeforces.com/problemset/problem/2179/H",
+      "name": "Blackslex and Plants",
+      "difficulty": 2200,
+      "addedAt": "2026-05-17T18:58:23.073Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-17",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
