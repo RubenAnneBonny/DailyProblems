@@ -1195,6 +1195,20 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779101178660-vz18e",
+      "link": "https://chalmerschallenge26.kattis.com/contests/chalmerschallenge26/problems/inverselis",
+      "name": "Inverse LIS",
+      "difficulty": 7.1,
+      "addedAt": "2026-05-18T10:46:18.660Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-18",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      },
+      "platform": "kattis"
     }
   ]
 }
