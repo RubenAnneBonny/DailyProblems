@@ -1209,6 +1209,19 @@
         "Ruiming": false
       },
       "platform": "kattis"
+    },
+    {
+      "id": "1779170496661-7o70z",
+      "link": "https://codeforces.com/problemset/problem/2230/D",
+      "name": "Good Schedule",
+      "difficulty": null,
+      "addedAt": "2026-05-19T06:01:36.661Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-19",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
