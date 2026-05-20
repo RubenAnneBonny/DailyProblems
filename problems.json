@@ -1219,7 +1219,7 @@
       "isDaily": true,
       "dailyDate": "2026-05-19",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     }
