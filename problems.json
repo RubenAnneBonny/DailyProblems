@@ -1222,6 +1222,20 @@
         "Ruben": true,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779282682924-04gv9",
+      "link": "https://po2punkt0.kattis.com/problems/gruppindelning3",
+      "name": "Gruppindelning",
+      "difficulty": 8,
+      "addedAt": "2026-05-20T13:11:22.924Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-20",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      },
+      "platform": "kattis"
     }
   ]
 }
