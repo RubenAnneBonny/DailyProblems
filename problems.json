@@ -1224,11 +1224,11 @@
       }
     },
     {
-      "id": "1779282682924-04gv9",
+      "id": "1779282710830-kjg19",
       "link": "https://po2punkt0.kattis.com/problems/gruppindelning3",
       "name": "Gruppindelning",
-      "difficulty": 8,
-      "addedAt": "2026-05-20T13:11:22.924Z",
+      "difficulty": 7.4,
+      "addedAt": "2026-05-20T13:11:50.830Z",
       "isDaily": true,
       "dailyDate": "2026-05-20",
       "solved": {
