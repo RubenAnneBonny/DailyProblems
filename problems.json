@@ -1166,7 +1166,7 @@
       "isDaily": true,
       "dailyDate": "2026-05-15",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
