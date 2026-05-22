@@ -1249,6 +1249,19 @@
         "Ruben": true,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779429326140-670yj",
+      "link": "https://codeforces.com/problemset/problem/2068/C",
+      "name": "Ads",
+      "difficulty": 2100,
+      "addedAt": "2026-05-22T05:55:26.140Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-22",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
