@@ -1262,6 +1262,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779524708651-roghg",
+      "link": "https://codeforces.com/problemset/problem/2150/C",
+      "name": "Limited Edition Shop",
+      "difficulty": 2100,
+      "addedAt": "2026-05-23T08:25:08.651Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-23",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
