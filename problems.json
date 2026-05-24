@@ -1275,6 +1275,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779637421726-u8ysb",
+      "link": "https://codeforces.com/problemset/problem/1486/E",
+      "name": "Paired Payment",
+      "difficulty": 2200,
+      "addedAt": "2026-05-24T15:43:41.726Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-24",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
