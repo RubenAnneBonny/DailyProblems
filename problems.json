@@ -1288,6 +1288,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779728962224-kwrv6",
+      "link": "https://codeforces.com/contest/2230/problem/E",
+      "name": "Minimum Influence",
+      "difficulty": null,
+      "addedAt": "2026-05-25T17:09:22.224Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-25",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
