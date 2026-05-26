@@ -1301,6 +1301,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779791703116-udv6l",
+      "link": "https://codeforces.com/problemset/problem/1725/C",
+      "name": "Circular Mirror",
+      "difficulty": 2000,
+      "addedAt": "2026-05-26T10:35:03.116Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-26",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
