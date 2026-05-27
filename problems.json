@@ -1314,6 +1314,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779862046059-7s1y4",
+      "link": "https://codeforces.com/contest/2183/problem/D2",
+      "name": "Tree Coloring (Hard Version)",
+      "difficulty": 2100,
+      "addedAt": "2026-05-27T06:07:26.059Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-27",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
