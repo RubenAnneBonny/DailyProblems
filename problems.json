@@ -1327,6 +1327,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1779995006969-1r7mb",
+      "link": "https://codeforces.com/problemset/problem/1252/K",
+      "name": "Addition Robot",
+      "difficulty": 2100,
+      "addedAt": "2026-05-28T19:03:26.969Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-28",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
