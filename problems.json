@@ -1340,6 +1340,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1780076331251-mjq3h",
+      "link": "https://codeforces.com/problemset/problem/2196/C2",
+      "name": "Interactive Graph (Hard Version)",
+      "difficulty": 2000,
+      "addedAt": "2026-05-29T17:38:51.251Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-29",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
