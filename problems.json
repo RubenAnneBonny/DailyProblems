@@ -1353,6 +1353,19 @@
         "Ruben": true,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1780132819459-b0c5g",
+      "link": "https://codeforces.com/problemset/problem/2065/H",
+      "name": "Bro Thinks He's Him",
+      "difficulty": 2200,
+      "addedAt": "2026-05-30T09:20:19.459Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-30",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
