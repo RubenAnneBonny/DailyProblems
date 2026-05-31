@@ -1366,6 +1366,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1780217499240-sbs2h",
+      "link": "https://codeforces.com/problemset/problem/2171/G",
+      "name": "Sakura Adachi and Optimal Sequences",
+      "difficulty": 2000,
+      "addedAt": "2026-05-31T08:51:39.240Z",
+      "isDaily": true,
+      "dailyDate": "2026-05-31",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
