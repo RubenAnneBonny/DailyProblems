@@ -1379,6 +1379,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1780348681825-q9nds",
+      "link": "https://codeforces.com/problemset/problem/2152/E",
+      "name": "Monotone Subsequence",
+      "difficulty": 2100,
+      "addedAt": "2026-06-01T21:18:01.825Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-01",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
