@@ -1405,6 +1405,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1780489377466-uho73",
+      "link": "https://codeforces.com/problemset/problem/2135/C",
+      "name": "By the Assignment",
+      "difficulty": 2000,
+      "addedAt": "2026-06-03T12:22:57.466Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-03",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
