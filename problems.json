@@ -1418,6 +1418,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1780584679370-0bl2w",
+      "link": "https://codeforces.com/problemset/problem/2165/B",
+      "name": "Marble Council",
+      "difficulty": 1900,
+      "addedAt": "2026-06-04T14:51:19.370Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-04",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
