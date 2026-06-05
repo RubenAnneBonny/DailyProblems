@@ -1431,6 +1431,20 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1780674888663-dv4tx",
+      "link": "https://po2punkt0.kattis.com/problems/citations",
+      "name": "Citations",
+      "difficulty": 6,
+      "addedAt": "2026-06-05T15:54:48.663Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-05",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      },
+      "platform": "kattis"
     }
   ]
 }
