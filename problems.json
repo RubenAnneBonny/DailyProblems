@@ -468,7 +468,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
@@ -481,7 +481,7 @@
       "isDaily": false,
       "dailyDate": null,
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
