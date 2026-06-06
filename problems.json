@@ -1445,6 +1445,19 @@
         "Ruiming": false
       },
       "platform": "kattis"
+    },
+    {
+      "id": "1780727703418-a0mq3",
+      "link": "https://codeforces.com/problemset/problem/2164/D",
+      "name": "Copy String",
+      "difficulty": 1800,
+      "addedAt": "2026-06-06T06:35:03.418Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-06",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
