@@ -1458,6 +1458,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1780845465381-rspbw",
+      "link": "https://codeforces.com/problemset/problem/2217/E",
+      "name": "Definitely Larger",
+      "difficulty": 2000,
+      "addedAt": "2026-06-07T15:17:45.381Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-07",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
