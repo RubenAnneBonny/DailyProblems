@@ -1484,6 +1484,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781025086434-u8lzz",
+      "link": "https://codeforces.com/problemset/problem/808/D",
+      "name": "Array Division",
+      "difficulty": 1900,
+      "addedAt": "2026-06-09T17:11:26.434Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-09",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
