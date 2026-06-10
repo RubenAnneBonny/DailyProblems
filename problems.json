@@ -1497,6 +1497,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781072385844-jncd8",
+      "link": "https://codeforces.com/contest/2233/problem/D",
+      "name": "Goods on the Shelf",
+      "difficulty": null,
+      "addedAt": "2026-06-10T06:19:45.844Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-10",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
