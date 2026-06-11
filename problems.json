@@ -1510,6 +1510,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781211163926-g73ek",
+      "link": "https://codeforces.com/problemset/problem/1932/F",
+      "name": "Feed Cats",
+      "difficulty": 1900,
+      "addedAt": "2026-06-11T20:52:43.926Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-11",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
