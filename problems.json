@@ -1523,6 +1523,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781277952193-syu40",
+      "link": "https://codeforces.com/problemset/problem/2156/D",
+      "name": "Find the Last Number",
+      "difficulty": 1900,
+      "addedAt": "2026-06-12T15:25:52.193Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-12",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
