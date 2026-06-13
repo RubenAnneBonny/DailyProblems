@@ -1536,6 +1536,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781359482165-tyhe5",
+      "link": "https://codeforces.com/problemset/problem/1949/C",
+      "name": "Annual Ants' Gathering",
+      "difficulty": 1900,
+      "addedAt": "2026-06-13T14:04:42.165Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-13",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
