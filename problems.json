@@ -1549,6 +1549,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781419724239-bkvof",
+      "link": "https://codeforces.com/problemset/problem/2155/D",
+      "name": "Batteries",
+      "difficulty": 1800,
+      "addedAt": "2026-06-14T06:48:44.239Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-14",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
