@@ -1562,6 +1562,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781521781621-q0fvp",
+      "link": "https://codeforces.com/problemset/problem/1753/C",
+      "name": "Wish I Knew How to Sort",
+      "difficulty": 2000,
+      "addedAt": "2026-06-15T11:09:41.621Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-15",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
