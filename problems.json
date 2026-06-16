@@ -1575,6 +1575,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1781637676012-p3n6g",
+      "link": "https://codeforces.com/problemset/problem/2153/D",
+      "name": "Not Alone",
+      "difficulty": 1800,
+      "addedAt": "2026-06-16T19:21:16.013Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-16",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
