@@ -1588,6 +1588,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781705975529-sre7x",
+      "link": "https://codeforces.com/problemset/problem/2018/B",
+      "name": "Speedbreaker",
+      "difficulty": 1900,
+      "addedAt": "2026-06-17T14:19:35.529Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-17",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
