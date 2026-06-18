@@ -1601,6 +1601,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781769622873-os0bk",
+      "link": "https://codeforces.com/problemset/problem/2157/E",
+      "name": "Adjusting Drones",
+      "difficulty": 1900,
+      "addedAt": "2026-06-18T08:00:22.873Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-18",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
