@@ -1614,6 +1614,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1781950686148-x6k0i",
+      "link": "https://codeforces.com/problemset/problem/2223/C",
+      "name": "Zhily and Signpost",
+      "difficulty": 2300,
+      "addedAt": "2026-06-20T10:18:06.148Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-20",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
