@@ -1627,6 +1627,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1782075560750-incfa",
+      "link": "https://codeforces.com/problemset/problem/1914/F",
+      "name": "Programming Competition",
+      "difficulty": 1900,
+      "addedAt": "2026-06-21T20:59:20.750Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-21",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
