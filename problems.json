@@ -1640,6 +1640,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782193239716-yy3vs",
+      "link": "https://codeforces.com/problemset/problem/2140/E1",
+      "name": "Prime Gaming (Easy Version)",
+      "difficulty": 2200,
+      "addedAt": "2026-06-23T05:40:39.716Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
