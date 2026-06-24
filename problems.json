@@ -1653,6 +1653,32 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782330396088-um2c7",
+      "link": "https://codeforces.com/problemset/problem/2233/E1",
+      "name": "Permutation Transmission (Easy Version)",
+      "difficulty": 2200,
+      "addedAt": "2026-06-24T19:46:36.088Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1782330401455-mpfoy",
+      "link": "https://codeforces.com/problemset/problem/2228/E1",
+      "name": "Amanojaku and Sequence (Easy Version)",
+      "difficulty": 2400,
+      "addedAt": "2026-06-24T19:46:41.455Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-24",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
