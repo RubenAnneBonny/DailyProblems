@@ -1679,6 +1679,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782408994679-i3cua",
+      "link": "https://codeforces.com/problemset/problem/30/C",
+      "name": "Shooting Gallery",
+      "difficulty": 1800,
+      "addedAt": "2026-06-25T17:36:34.679Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-25",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
