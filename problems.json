@@ -1692,6 +1692,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782466447787-1ahhl",
+      "link": "https://codeforces.com/problemset/problem/2229/E",
+      "name": "Deconstruction Tree",
+      "difficulty": 2100,
+      "addedAt": "2026-06-26T09:34:07.787Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-26",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
