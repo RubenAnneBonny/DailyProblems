@@ -1705,6 +1705,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782637310066-lnxv4",
+      "link": "https://codeforces.com/problemset/problem/2237/E",
+      "name": "Permutation Commutation",
+      "difficulty": 2000,
+      "addedAt": "2026-06-28T09:01:50.066Z",
+      "isDaily": true,
+      "dailyDate": "2026-06-28",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
