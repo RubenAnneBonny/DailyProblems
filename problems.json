@@ -1718,6 +1718,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782680759553-9ryx5",
+      "link": "https://codeforces.com/problemset/problem/2189/E",
+      "name": "Majority Wins?",
+      "difficulty": 2600,
+      "addedAt": "2026-06-28T21:05:59.553Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
