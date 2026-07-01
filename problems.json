@@ -1731,6 +1731,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782893401047-mf8g5",
+      "link": "https://codeforces.com/problemset/problem/2071/D1",
+      "name": "Infinite Sequence (Easy Version)",
+      "difficulty": 1800,
+      "addedAt": "2026-07-01T08:10:01.047Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-01",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
