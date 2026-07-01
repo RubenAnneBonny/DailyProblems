@@ -1744,6 +1744,19 @@
         "Ruben": true,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782901021066-6b6mm",
+      "link": "https://codeforces.com/problemset/problem/2239/C",
+      "name": "Revival",
+      "difficulty": 2200,
+      "addedAt": "2026-07-01T10:17:01.066Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-01",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
