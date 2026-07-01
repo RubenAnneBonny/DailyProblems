@@ -1757,6 +1757,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782902713095-iz729",
+      "link": "https://codeforces.com/contest/2071/problem/D2",
+      "name": "Infinite Sequence (Hard Version)",
+      "difficulty": 2500,
+      "addedAt": "2026-07-01T10:45:13.095Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
