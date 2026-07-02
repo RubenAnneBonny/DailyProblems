@@ -1770,6 +1770,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1782952197256-7cy3t",
+      "link": "https://codeforces.com/problemset/problem/2226/E",
+      "name": "Mental Monumental (Hard Version)",
+      "difficulty": 2300,
+      "addedAt": "2026-07-02T00:29:57.256Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-02",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
