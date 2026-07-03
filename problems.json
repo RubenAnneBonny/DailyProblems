@@ -1783,6 +1783,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1783067701972-liqx3",
+      "link": "https://codeforces.com/problemset/problem/118/C",
+      "name": "Fancy Number",
+      "difficulty": 1900,
+      "addedAt": "2026-07-03T08:35:01.972Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-03",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
