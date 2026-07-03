@@ -1793,7 +1793,7 @@
       "isDaily": true,
       "dailyDate": "2026-07-03",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": false
       }
     }
