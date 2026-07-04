@@ -1796,6 +1796,19 @@
         "Ruben": true,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1783175979523-jfnem",
+      "link": "https://codeforces.com/problemset/problem/2200/G",
+      "name": "Operation Permutation",
+      "difficulty": 2200,
+      "addedAt": "2026-07-04T14:39:39.523Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-04",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
