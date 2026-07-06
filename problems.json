@@ -1809,6 +1809,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1783313205381-ypmpn",
+      "link": "https://codeforces.com/problemset/problem/2227/H",
+      "name": "Fallen Leaves",
+      "difficulty": 2100,
+      "addedAt": "2026-07-06T04:46:45.382Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-06",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
