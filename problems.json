@@ -1822,6 +1822,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1783511810901-mx0af",
+      "link": "https://codeforces.com/problemset/problem/2229/F",
+      "name": "Load Unbalancing",
+      "difficulty": 2400,
+      "addedAt": "2026-07-08T11:56:50.901Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-08",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
