@@ -1520,7 +1520,7 @@
       "isDaily": true,
       "dailyDate": "2026-06-11",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
