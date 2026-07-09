@@ -1835,6 +1835,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1783598884153-6wgua",
+      "link": "https://codeforces.com/problemset/problem/2050/G",
+      "name": "Tree Destruction",
+      "difficulty": 1900,
+      "addedAt": "2026-07-09T12:08:04.153Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-09",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
