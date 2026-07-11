@@ -1848,6 +1848,19 @@
         "Ruben": true,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1783814346899-qiq47",
+      "link": "https://codeforces.com/problemset/problem/2207/D",
+      "name": "Boxed Like a Fish",
+      "difficulty": 2200,
+      "addedAt": "2026-07-11T23:59:06.899Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-11",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
