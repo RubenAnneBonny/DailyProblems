@@ -1861,6 +1861,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1784015198398-gg7vw",
+      "link": "https://codeforces.com/problemset/problem/2176/F",
+      "name": "Omega Numbers",
+      "difficulty": 2400,
+      "addedAt": "2026-07-14T07:46:38.398Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-14",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
