@@ -1874,6 +1874,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1784159413310-i42ff",
+      "link": "https://codeforces.com/problemset/problem/2126/G1",
+      "name": "Big Wins! (easy version)",
+      "difficulty": 2200,
+      "addedAt": "2026-07-15T23:50:13.310Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-15",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
