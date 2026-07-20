@@ -1900,6 +1900,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1784519224821-4ugcv",
+      "link": "https://codeforces.com/problemset/problem/2119/D",
+      "name": "Token Removing",
+      "difficulty": 2100,
+      "addedAt": "2026-07-20T03:47:04.821Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-20",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
