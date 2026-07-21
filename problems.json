@@ -1913,6 +1913,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1784616049185-zwry7",
+      "link": "https://codeforces.com/problemset/problem/2176/E",
+      "name": "Remove at the lowest cost",
+      "difficulty": 2400,
+      "addedAt": "2026-07-21T06:40:49.185Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
