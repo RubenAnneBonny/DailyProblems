@@ -1926,6 +1926,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1784736992057-2ooge",
+      "link": "https://codeforces.com/problemset/problem/2118/D2",
+      "name": "Red Light, Green Light (Hard version)",
+      "difficulty": 2200,
+      "addedAt": "2026-07-22T16:16:32.057Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-22",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
