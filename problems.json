@@ -1939,6 +1939,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1784894587626-crx0c",
+      "link": "https://codeforces.com/problemset/problem/2124/F1",
+      "name": "Appending Permutations (Easy Version)",
+      "difficulty": 2300,
+      "addedAt": "2026-07-24T12:03:07.626Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-24",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
