@@ -1952,6 +1952,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1785137564633-3qfzk",
+      "link": "https://codeforces.com/problemset/problem/2171/H",
+      "name": "Shiori Miyagi and Maximum Array Score",
+      "difficulty": 2400,
+      "addedAt": "2026-07-27T07:32:44.633Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-27",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
