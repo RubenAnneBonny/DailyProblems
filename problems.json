@@ -1965,6 +1965,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1785221025222-7pa1n",
+      "link": "https://codeforces.com/problemset/problem/2138/C2",
+      "name": "Maple and Tree Beauty (Hard Version)",
+      "difficulty": 2000,
+      "addedAt": "2026-07-28T06:43:45.223Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-28",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
