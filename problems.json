@@ -1978,6 +1978,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1785441454111-i059s",
+      "link": "https://codeforces.com/problemset/problem/2143/D2",
+      "name": "Inversion Graph Coloring (Hard Version)",
+      "difficulty": 2200,
+      "addedAt": "2026-07-30T19:57:34.111Z",
+      "isDaily": true,
+      "dailyDate": "2026-07-30",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
