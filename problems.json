@@ -2004,6 +2004,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1785742548753-3wwu1",
+      "link": "https://codeforces.com/problemset/problem/2134/E",
+      "name": "Power Boxes",
+      "difficulty": 2300,
+      "addedAt": "2026-08-03T07:35:48.753Z",
+      "isDaily": true,
+      "dailyDate": "2026-08-03",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
