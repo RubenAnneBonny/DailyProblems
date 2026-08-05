@@ -2017,6 +2017,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1785941334733-c86tm",
+      "link": "https://codeforces.com/problemset/problem/2084/E",
+      "name": "Blossom",
+      "difficulty": 2400,
+      "addedAt": "2026-08-05T14:48:54.733Z",
+      "isDaily": true,
+      "dailyDate": "2026-08-05",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
