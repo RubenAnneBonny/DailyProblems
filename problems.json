@@ -2030,6 +2030,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1786089119657-7n03z",
+      "link": "https://codeforces.com/problemset/problem/2169/E",
+      "name": "Points Selection",
+      "difficulty": 2400,
+      "addedAt": "2026-08-07T07:51:59.657Z",
+      "isDaily": true,
+      "dailyDate": "2026-08-07",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
