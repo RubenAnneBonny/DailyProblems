@@ -1637,7 +1637,7 @@
       "isDaily": true,
       "dailyDate": "2026-06-21",
       "solved": {
-        "Ruben": false,
+        "Ruben": true,
         "Ruiming": true
       }
     },
