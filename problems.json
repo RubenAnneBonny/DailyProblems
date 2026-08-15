@@ -2069,6 +2069,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1786777076947-o19sh",
+      "link": "https://codeforces.com/problemset/problem/2109/E",
+      "name": "Binary String Wowee",
+      "difficulty": 2400,
+      "addedAt": "2026-08-15T06:57:56.947Z",
+      "isDaily": true,
+      "dailyDate": "2026-08-15",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
