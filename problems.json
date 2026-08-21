@@ -2108,6 +2108,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1787297507423-kk3hs",
+      "link": "https://codeforces.com/problemset/problem/2137/G",
+      "name": "Cry Me a River",
+      "difficulty": 2200,
+      "addedAt": "2026-08-21T07:31:47.423Z",
+      "isDaily": true,
+      "dailyDate": "2026-08-21",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
