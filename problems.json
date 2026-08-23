@@ -2121,6 +2121,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1787471457292-4a5ve",
+      "link": "https://codeforces.com/problemset/problem/2091/G",
+      "name": "Gleb and Boating",
+      "difficulty": 2300,
+      "addedAt": "2026-08-23T07:50:57.292Z",
+      "isDaily": true,
+      "dailyDate": "2026-08-23",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
