@@ -2147,6 +2147,32 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1787929154289-e9buy",
+      "link": "https://codeforces.com/problemset/problem/2060/F",
+      "name": "Multiplicative Arrays",
+      "difficulty": 2200,
+      "addedAt": "2026-08-28T14:59:14.289Z",
+      "isDaily": true,
+      "dailyDate": "2026-08-28",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1787929173239-srlds",
+      "link": "https://codeforces.com/problemset/problem/2041/H",
+      "name": "Sheet Music",
+      "difficulty": 2300,
+      "addedAt": "2026-08-28T14:59:33.239Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
