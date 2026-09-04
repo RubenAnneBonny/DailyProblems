@@ -2212,6 +2212,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1788520731021-syrl9",
+      "link": "https://codeforces.com/problemset/problem/2169/D2",
+      "name": "Removal of a Sequence (Hard Version)",
+      "difficulty": 2100,
+      "addedAt": "2026-09-04T11:18:51.021Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-04",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
