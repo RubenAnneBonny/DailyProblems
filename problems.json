@@ -2225,6 +2225,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1788709102296-7zg79",
+      "link": "https://codeforces.com/problemset/problem/2114/G",
+      "name": "Build an Array",
+      "difficulty": 2200,
+      "addedAt": "2026-09-06T15:38:22.296Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-06",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
