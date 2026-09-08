@@ -2238,6 +2238,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1788870953823-g6l29",
+      "link": "https://codeforces.com/contest/2259/problem/H",
+      "name": "Treasure Map Destruction (Counting Version)",
+      "difficulty": 2200,
+      "addedAt": "2026-09-08T12:35:53.823Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-08",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
