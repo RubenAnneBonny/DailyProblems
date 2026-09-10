@@ -2264,6 +2264,32 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1789070193861-cc43f",
+      "link": "https://codeforces.com/gym/106129/problem/B",
+      "name": "GCPC 2025 B",
+      "difficulty": null,
+      "addedAt": "2026-09-10T19:56:33.861Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1789070204733-uannh",
+      "link": "https://codeforces.com/gym/106129/problem/C",
+      "name": "GCPC 2025 C",
+      "difficulty": null,
+      "addedAt": "2026-09-10T19:56:44.733Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
