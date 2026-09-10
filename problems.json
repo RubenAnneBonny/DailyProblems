@@ -2290,6 +2290,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1789070230584-7nllk",
+      "link": "https://codeforces.com/gym/106129/problem/E",
+      "name": "GCPC 2025 E",
+      "difficulty": null,
+      "addedAt": "2026-09-10T19:57:10.584Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
