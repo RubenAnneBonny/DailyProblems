@@ -2251,6 +2251,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1789051105816-r0l38",
+      "link": "https://codeforces.com/problemset/problem/2219/B2",
+      "name": "Unique Values (Hard version)",
+      "difficulty": 2000,
+      "addedAt": "2026-09-10T14:38:25.816Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-10",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
