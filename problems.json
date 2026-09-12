@@ -2303,6 +2303,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1789204574727-jmv13",
+      "link": "https://codeforces.com/problemset/problem/2114/F",
+      "name": "Small Operations",
+      "difficulty": 2000,
+      "addedAt": "2026-09-12T09:16:14.727Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-12",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
