@@ -2316,6 +2316,45 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1789409499082-9b7ly",
+      "link": "https://codeforces.com/gym/106157/problem/B",
+      "name": "UKIEPC 2025 B",
+      "difficulty": null,
+      "addedAt": "2026-09-14T18:11:39.082Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1789409512101-opxh7",
+      "link": "https://codeforces.com/gym/106157/problem/D",
+      "name": "UKIEPC 2025 D",
+      "difficulty": null,
+      "addedAt": "2026-09-14T18:11:52.101Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1789409532911-grglo",
+      "link": "https://codeforces.com/gym/106157/problem/H",
+      "name": "UKIEPC 2025 H",
+      "difficulty": null,
+      "addedAt": "2026-09-14T18:12:12.911Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
