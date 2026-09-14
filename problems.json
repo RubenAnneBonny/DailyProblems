@@ -2355,6 +2355,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1789409564950-tsz56",
+      "link": "https://codeforces.com/problemset/problem/2174/C1",
+      "name": "Beautiful Patterns (Easy Version)",
+      "difficulty": 2400,
+      "addedAt": "2026-09-14T18:12:44.950Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-14",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
