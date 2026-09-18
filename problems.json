@@ -2381,6 +2381,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1789737045528-843zy",
+      "link": "https://codeforces.com/problemset/problem/2264/E1",
+      "name": "A Prime Flood (Easy Version)",
+      "difficulty": null,
+      "addedAt": "2026-09-18T13:10:45.528Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-18",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
