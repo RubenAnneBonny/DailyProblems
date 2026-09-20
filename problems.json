@@ -2383,13 +2383,26 @@
       }
     },
     {
-      "id": "1789737045528-843zy",
+      "id": "1789899084545-ddqwa",
+      "link": "https://codeforces.com/problemset/problem/2262/C",
+      "name": "Traveling the World",
+      "difficulty": 2200,
+      "addedAt": "2026-09-20T10:11:24.545Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-20",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1789899093686-7oan8",
       "link": "https://codeforces.com/problemset/problem/2264/E1",
       "name": "A Prime Flood (Easy Version)",
-      "difficulty": null,
-      "addedAt": "2026-09-18T13:10:45.528Z",
-      "isDaily": true,
-      "dailyDate": "2026-09-18",
+      "difficulty": 2100,
+      "addedAt": "2026-09-20T10:11:33.686Z",
+      "isDaily": false,
+      "dailyDate": null,
       "solved": {
         "Ruben": false,
         "Ruiming": false
