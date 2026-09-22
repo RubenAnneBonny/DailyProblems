@@ -2407,6 +2407,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1790089338977-mxekl",
+      "link": "https://codeforces.com/problemset/problem/2124/E",
+      "name": "Make it Zero",
+      "difficulty": 2100,
+      "addedAt": "2026-09-22T15:02:18.977Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-22",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
