@@ -2420,6 +2420,32 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1790179676494-yudi3",
+      "link": "https://codeforces.com/gym/105446/problem/E",
+      "name": "UKIEPC 2024 E",
+      "difficulty": null,
+      "addedAt": "2026-09-23T16:07:56.494Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1790179710150-p74gh",
+      "link": "https://codeforces.com/gym/105446/problem/J",
+      "name": "UKIEPC 2024 J",
+      "difficulty": null,
+      "addedAt": "2026-09-23T16:08:30.151Z",
+      "isDaily": false,
+      "dailyDate": null,
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
