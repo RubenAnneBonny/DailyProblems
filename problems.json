@@ -2446,6 +2446,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1790252644132-c5l1e",
+      "link": "https://codeforces.com/problemset/problem/2173/E",
+      "name": "Shiro's Mirror Duel",
+      "difficulty": 2200,
+      "addedAt": "2026-09-24T12:24:04.132Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-24",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
