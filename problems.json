@@ -2459,6 +2459,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1790412674279-s0gws",
+      "link": "https://codeforces.com/problemset/problem/2190/C",
+      "name": "Comparable Permutations",
+      "difficulty": 2300,
+      "addedAt": "2026-09-26T08:51:14.279Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-26",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
