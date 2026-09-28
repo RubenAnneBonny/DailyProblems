@@ -2472,6 +2472,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1790586629674-0muea",
+      "link": "https://codeforces.com/contest/2253/problem/E",
+      "name": "Diameter Intersections",
+      "difficulty": 2200,
+      "addedAt": "2026-09-28T09:10:29.674Z",
+      "isDaily": true,
+      "dailyDate": "2026-09-28",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
