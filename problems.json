@@ -2524,6 +2524,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1791309930902-x8hi1",
+      "link": "https://codeforces.com/problemset/problem/2266/G",
+      "name": "Modular Tree",
+      "difficulty": 2200,
+      "addedAt": "2026-10-06T18:05:30.902Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-06",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
