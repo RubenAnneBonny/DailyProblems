@@ -2537,6 +2537,19 @@
         "Ruben": false,
         "Ruiming": true
       }
+    },
+    {
+      "id": "1791440008261-z2k8k",
+      "link": "https://codeforces.com/contest/2264/problem/E2",
+      "name": "A Prime Flood (Hard Version)",
+      "difficulty": 2700,
+      "addedAt": "2026-10-08T06:13:28.261Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-08",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
