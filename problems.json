@@ -2550,6 +2550,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1791636840043-vyd2s",
+      "link": "https://codeforces.com/contest/2258/problem/E",
+      "name": "DivMEX",
+      "difficulty": 2400,
+      "addedAt": "2026-10-10T12:54:00.043Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-10",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
