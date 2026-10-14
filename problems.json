@@ -2576,6 +2576,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1791991143747-ur8tl",
+      "link": "https://codeforces.com/problemset/problem/2258/E",
+      "name": "2258 E",
+      "difficulty": 2400,
+      "addedAt": "2026-10-14T15:19:03.747Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-14",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
