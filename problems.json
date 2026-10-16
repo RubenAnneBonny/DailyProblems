@@ -2589,6 +2589,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1792158690354-bhohg",
+      "link": "https://codeforces.com/problemset/problem/2267/F2",
+      "name": "XOR Transformations (Hard Version)",
+      "difficulty": 2300,
+      "addedAt": "2026-10-16T13:51:30.354Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-16",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
