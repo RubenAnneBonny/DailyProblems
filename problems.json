@@ -2602,6 +2602,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1792311268625-w49gb",
+      "link": "https://codeforces.com/problemset/problem/2266/H",
+      "name": "Deque Malfunction",
+      "difficulty": 2400,
+      "addedAt": "2026-10-18T08:14:28.625Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-18",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
