@@ -2615,6 +2615,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1792489521434-zdx9u",
+      "link": "https://codeforces.com/problemset/problem/2275/H",
+      "name": "A Problem to Warm Up the Eyebrows",
+      "difficulty": 2400,
+      "addedAt": "2026-10-20T09:45:21.434Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-20",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
