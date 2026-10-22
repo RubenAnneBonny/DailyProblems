@@ -2628,6 +2628,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1792688412630-c3ko4",
+      "link": "https://codeforces.com/problemset/problem/2276/G",
+      "name": "Elimination of Players",
+      "difficulty": 2100,
+      "addedAt": "2026-10-22T17:00:12.631Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-22",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
