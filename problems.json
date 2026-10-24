@@ -2630,13 +2630,26 @@
       }
     },
     {
-      "id": "1792688412630-c3ko4",
-      "link": "https://codeforces.com/problemset/problem/2276/G",
-      "name": "Elimination of Players",
+      "id": "1792822980108-3d4gg",
+      "link": "https://codeforces.com/problemset/problem/2273/C",
+      "name": "Matrix Puzzle",
       "difficulty": 2100,
-      "addedAt": "2026-10-22T17:00:12.631Z",
+      "addedAt": "2026-10-24T06:23:00.108Z",
       "isDaily": true,
-      "dailyDate": "2026-10-22",
+      "dailyDate": "2026-10-24",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
+    },
+    {
+      "id": "1792823010012-gzzal",
+      "link": "https://codeforces.com/problemset/problem/2254/G",
+      "name": "Nightcrawler",
+      "difficulty": 2200,
+      "addedAt": "2026-10-24T06:23:30.012Z",
+      "isDaily": false,
+      "dailyDate": null,
       "solved": {
         "Ruben": false,
         "Ruiming": false
