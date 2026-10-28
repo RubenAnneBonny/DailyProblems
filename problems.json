@@ -2667,6 +2667,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1793203500991-6ix4i",
+      "link": "https://codeforces.com/problemset/problem/2246/D",
+      "name": "diss_quack and Array Game",
+      "difficulty": 1900,
+      "addedAt": "2026-10-28T16:05:00.991Z",
+      "isDaily": true,
+      "dailyDate": "2026-10-28",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": false
+      }
     }
   ]
 }
