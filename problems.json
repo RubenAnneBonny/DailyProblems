@@ -2680,6 +2680,19 @@
         "Ruben": false,
         "Ruiming": false
       }
+    },
+    {
+      "id": "1794515722804-0yyor",
+      "link": "https://codeforces.com/gym/103049/problem/G",
+      "name": "NWERC 2020",
+      "difficulty": null,
+      "addedAt": "2026-11-12T20:35:22.804Z",
+      "isDaily": true,
+      "dailyDate": "2026-11-12",
+      "solved": {
+        "Ruben": false,
+        "Ruiming": true
+      }
     }
   ]
 }
