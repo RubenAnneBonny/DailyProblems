@@ -2682,13 +2682,13 @@
       }
     },
     {
-      "id": "1794515722804-0yyor",
+      "id": "1794515738395-a63tn",
       "link": "https://codeforces.com/gym/103049/problem/G",
-      "name": "NWERC 2020",
+      "name": "NWERC 2020 G",
       "difficulty": null,
-      "addedAt": "2026-11-12T20:35:22.804Z",
-      "isDaily": true,
-      "dailyDate": "2026-11-12",
+      "addedAt": "2026-11-12T20:35:38.395Z",
+      "isDaily": false,
+      "dailyDate": null,
       "solved": {
         "Ruben": false,
         "Ruiming": true
